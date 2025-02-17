@@ -1,0 +1,1342 @@
+/* about pg css start */
+
+.inner-banner .shop-stragety h2 {
+    color: var(--white-color);
+    font-size: 100px;
+    line-height: 0.9;
+  }
+
+  .inner-banner .shop-stragety p {
+    color: var(--white-color);
+    font-weight: 200;
+    margin-bottom: 20px;
+  }
+
+  /* about pg css end */
+
+  /* capabilities pg css start */
+
+  .capabilities {
+    padding: 100px 0;
+  }
+
+  .capabilities .shop-stragety p {
+    width: 83%;
+    margin-top: 30px;
+    line-height: 30px;
+  }
+
+  /* capabilities pg css end */
+
+  /* accreditations pg css start */
+
+  .accreditations-logo {
+    margin: 100px 0;
+    padding: 50px 0;
+    background: var(--org-color);
+  }
+
+  .naemt-logo {
+    background: var(--white-color);
+    padding: 20px;
+    height: 220px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+  }
+
+  /* accreditations pg css end */
+
+  /* grant_opportunities pg css start */
+
+  .grant_opportunities {
+    padding: 100px 0;
+  }
+
+  .bast-opportunities {
+    background: #e5e5e5;
+    padding: 20px 0;
+  }
+
+  .bast-opportunities ul li {
+    padding: 5px 0;
+  }
+
+  .bast-opportunities ul li p {
+    color: var(--grey-color);
+    font-weight: 400;
+    width: 75%;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .bast-opportunities ul li p a {
+    color: black;
+    font-weight: 500;
+  }
+
+  /* grant_opportunities pg css end */
+
+  /* Stickers pg css start */
+
+  .product-pg {
+    padding: 50px 0;
+  }
+
+  .main-product {
+    background: var(--pro-color);
+    padding: 15px;
+    margin-top: 20px;
+    transition: all ease 1s;
+    margin-bottom: 50px;
+  }
+
+  .main-product:hover {
+    background: var(--white-col);
+    transition: all ease 1s;
+    box-shadow: 0 0 30px 1px #00000036;
+  }
+
+  .owl-dot span {
+    width: 5px !important;
+    height: 5px !important;
+    background: var(--grey-col) !important;
+  }
+
+  .owl-dot.active span {
+    background: var(--black-col) !important;
+  }
+
+  .glasses-loop figure img {
+    animation: sclaeanimate 6s ease-out infinite;
+    margin: auto;
+    width: 85% !important;
+    height: 200px;
+  }
+
+  .main-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  .price-pro h6 {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--light-black-color);
+    font-family: "Poppins";
+  }
+
+  .box-div {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .box-div span {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+  }
+
+  .box-div .black-box {
+    background: var(--light-black-color);
+    color: var(--light-black-color);
+  }
+
+  .box-div .gray-box {
+    background: #b2b2b3;
+    color: #b2b2b3;
+  }
+
+  .box-div .red-box {
+    background: var(--org-color);
+    color: var(--org-color);
+  }
+
+  .box-div .green-box {
+    background: #2fff91;
+    color: #2fff91;
+  }
+
+  .box-div .blue-box {
+    background: #2e4ecc;
+    color: #2e4ecc;
+  }
+
+  .dollar-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    padding-bottom: 50px;
+  }
+
+  .dollar-price h5 {
+    color: var(--grey-color);
+    font-family: "Poppins";
+    font-weight: 400;
+  }
+
+  .glasses-loop {
+    background: var(--white-color);
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Stickers pg css end */
+
+  /* hats-pg pg css start */
+
+  .hats-pg .glasses-pro img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hats-pg .glasses-loop {
+    padding: 0;
+  }
+
+  /* hats-pg pg css end */
+
+  /* faqs pg css start */
+
+  .paggination-blogs {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .paggination-blogs .clickblog {
+    background: transparent;
+    border: none;
+    width: 30px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--grey-color);
+    border-radius: 0;
+  }
+
+  .paggination-blogs .clickblog .prev_blog {
+    width: 100%;
+  }
+
+  .paggination-blogs .prev_blog {
+    width: 100px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--grey-color);
+  }
+
+  .paggination-blogs .prev_blog span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .paggination-blogs .clickblog.active {
+    color: var(--light-black-color);
+    border-bottom: 2px solid var(--light-black-color);
+    font-weight: 600;
+  }
+
+  /* faqs pg css end */
+
+  /* upcoming-training pg css start */
+
+  .traning-info {
+    margin-bottom: 50px;
+  }
+
+  .upcoming-traning {
+    padding: 100px 0;
+  }
+
+  .traning-info-img {
+    border: 1px solid var(--grey-color);
+    margin-bottom: 20px;
+  }
+
+  .circle-logo p {
+    color: var(--grey-color);
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  /* upcoming-training pg css end */
+
+  /* staff pg css start */
+
+  .staff-pg {
+    padding: 100px 0;
+  }
+
+  .staff-info h3 {
+    font-size: 60px;
+    color: var(--grey-color);
+    margin-top: 30px;
+    line-height: 0.9;
+  }
+
+  .staff-info h5 {
+    color: var(--org-color);
+    font-size: 30px;
+    font-family: "Poppins";
+    font-weight: 500;
+  }
+
+  .staff-info p {
+    font-weight: 400;
+    color: var(--grey-color);
+    margin-top: 20px;
+    width: 95%;
+    margin-bottom: 20px;
+  }
+
+  .staff-img img {
+    height: 600px;
+  }
+
+  .staff-img {
+    text-align: end;
+  }
+
+  .stay-touch {
+    padding: 50px 0;
+  }
+
+  .touch-form {
+    background: var(--org-color);
+    padding: 50px 30px;
+    text-align: center;
+    border-radius: 20px;
+  }
+
+  .touch-form h4 {
+    color: #151515;
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .mail-form form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: auto;
+    width: 50%;
+  }
+
+  .mail-form .form-control {
+    border-radius: 30px;
+    height: 58px;
+    padding: 0px 20px;
+    font-weight: 500;
+  }
+
+  .mail-form input[type="submit"] {
+    padding: 15px 60px;
+    background: #151515;
+    border: none;
+    border-radius: 30px;
+    color: var(--white-color);
+    font-weight: 400;
+  }
+
+  .need-help {
+    margin: auto;
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 2px solid var(--light-black-color);
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .touch-main {
+    text-align: start;
+  }
+
+  .touch-main h6 {
+    font-weight: 500;
+    color: #151515;
+    font-size: 30px;
+  }
+
+  .touch-main p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #151515;
+  }
+
+  .contact-btn {
+    padding: 15px 60px;
+    background: transparent;
+    border: 2px solid #151515;
+    border-radius: 30px;
+    color: #151515;
+    font-weight: 600;
+  }
+
+  /* staff pg css end */
+
+  /* contact pg css start */
+
+  .contact-info-pg {
+    padding: 100px 0;
+  }
+
+  .ms-send h4 {
+    font-size: 45px;
+    color: var(--light-black-color);
+  }
+
+  .ms-send p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 10px;
+  }
+
+  .ms-send ul {
+    padding-top: 30px;
+  }
+
+  .ms-send ul li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 5px 0;
+  }
+
+  .ms-send ul li span {
+    background: var(--org-color);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60%;
+  }
+
+  .ms-send ul li span i {
+    color: var(--white-color);
+  }
+
+  .ms-send ul li p {
+    color: var(--light-black-color);
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .ms-send ul li p a {
+    display: block;
+    font-size: 12px;
+    color: var(--grid-org);
+    font-weight: 400;
+  }
+
+  .cont-from label {
+    color: var(--black-color);
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .cont-from .form-control {
+    height: 55px;
+    margin-bottom: 20px;
+    border: 2px solid #e9e9e9;
+    font-weight: 400;
+    font-size: 17px;
+  }
+
+  .cont-from #textarea {
+    height: unset !important;
+    margin-bottom: 40px;
+  }
+
+  /* contact pg css end */
+
+  /* government page css start */
+  .statement-sec {
+    padding: 20px 0px 60px 0px;
+  }
+
+  .goat-head {
+    background: var(--org-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px 1px 20px;
+    margin: 5px 0px;
+  }
+
+  .goat-head h2 {
+    color: white;
+    font-size: 32px;
+  }
+
+  p.goat-para {
+    color: black;
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 5px 20px;
+  }
+
+  .competition-core {
+    display: flex;
+    gap: 50px;
+    width: 100%;
+  }
+
+  .core-content {
+    width: 60%;
+  }
+
+  .core-img img {
+    padding-top: 10px;
+    width: 93%;
+    box-shadow: 3px 0px 3px 1px #00000014;
+  }
+
+  .core-img {
+    width: 40%;
+  }
+
+  .core-content p.goat-para {
+    padding: 5px 20px;
+    font-size: 15px;
+    text-align: start;
+  }
+
+  .company-snapshot iframe {
+    padding: 5px 10px;
+    width: 100%;
+    height: 300px;
+  }
+
+  .company-snapshot a {
+    color: black;
+    padding: 5px 20px;
+    display: block;
+  }
+
+  .company-snapshot a i {
+    margin-right: 3px;
+  }
+
+  .company-snapshot p i {
+    margin-right: 3px;
+  }
+
+  .differentiation p {
+    font-size: 15px;
+    padding: 2px 20px;
+  }
+
+  .company-snapshot p.goat-para {
+    padding: 1px 20px;
+    text-align: start;
+  }
+
+  .gapp {
+    margin-left: 30px;
+  }
+
+  p.gapp {
+    font-style: italic;
+  }
+
+  /* government page css end */
+
+  /* cart page css start */
+
+  .cart-pg {
+    padding: 50px 70px;
+  }
+
+  .yellow-back p {
+    margin: 0 0 10px;
+    padding: 5px 45px 5px 20px;
+    display: block;
+    font-weight: 700;
+    line-height: 34px;
+    font-size: 15px;
+    background: #ffa800;
+    color: #fff;
+    padding-left: 65px;
+    position: relative;
+  }
+
+  .yellow-back {
+    margin-top: 30px;
+  }
+
+  .cart-quantity {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    position: relative;
+    z-index: 0;
+    padding-bottom: 100px;
+  }
+
+  .cart-quantity:before {
+    position: absolute;
+    z-index: 0;
+    content: "";
+    left: 0;
+    top: 0;
+    background: #00000036;
+    width: 100%;
+    height: 1px;
+  }
+
+  .cart-quantity:after {
+    position: absolute;
+    z-index: 0;
+    content: "";
+    left: 0;
+    top: 50px;
+    background: #00000036;
+    width: 100%;
+    height: 1px;
+  }
+
+  .listed-items {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding-right: 40px;
+  }
+
+  .items-no {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .quntity-items {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .total-price {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .items-img {
+    display: flex;
+    gap: 30px;
+  }
+
+  .total-price input {
+    padding: 0;
+    width: 35%;
+  }
+
+  .current-item {
+    gap: 0;
+  }
+
+  .items-img figure {
+    background: var(--black-color);
+    width: 25%;
+  }
+
+  .clear-black-img h5 {
+    color: var(--black-color);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+  }
+
+  .clear-black-img h5 span {
+    color: var(--black-color);
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  .items-no h6 {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--black-color);
+  }
+
+  .total-price h6 {
+    font-weight: 600;
+    color: var(--black-color);
+  }
+
+  .total-price .btn i {
+    font-size: 13px;
+  }
+
+  .checkout-side-bar {
+    background: var(--org-color);
+    padding: 20px;
+  }
+
+  .back-wt {
+    background: var(--white-color);
+    padding: 10px;
+  }
+
+  .summary-bar {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .summary-bar button {
+    background: #355e3b;
+    transform: skewX(0deg);
+    width: 100%;
+    height: 55px;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+    margin: auto;
+    width: 85%;
+    margin-top: 15px;
+  }
+
+  .Subtotal-price li {
+    padding: 14px 0;
+    border-top: 1px solid #0000005e;
+  }
+
+  .Subtotal-price li h5 {
+    font-weight: 600;
+    color: var(--black-color);
+    font-size: 18px;
+  }
+
+  .Subtotal-price li h6 {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--black-color);
+  }
+
+  .pm-reward {
+    background: var(--white-color);
+    padding: 10px;
+    box-shadow: 0px 0px 15px 2px #00000042;
+    margin-bottom: 10px;
+  }
+
+  .rewards-pm span {
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .rewards-pm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  .log-in-pm p {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .log-in-pm {
+    padding: 8px 0;
+    display: none;
+  }
+
+  .Subtotal-price {
+    padding-bottom: 25px;
+  }
+
+  .Countryselect label {
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--black-color);
+    margin-bottom: 5px;
+  }
+
+  .Countryselect {
+    margin: 10px 0;
+  }
+
+  .Countryselect .select {
+    height: 35px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--black-color);
+  }
+
+  .checknow span {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--black-color);
+  }
+
+  .Countryselect button {
+    border: none;
+    margin-top: 15px;
+    padding: 12px 15px;
+    font-weight: 600;
+    background: var(--grey-color);
+    box-shadow: 0 0 10px 1px #00000063;
+  }
+
+  .last-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .back-btn .light-blue-btn {
+    transform: skewX(0deg);
+    padding: 12px 30px;
+    font-size: 15px;
+    font-weight: 500;
+    background: #355e3b;
+    color: white;
+    margin-top: 20px;
+  }
+
+  /* cart page css end */
+
+  /*  5/13/2024  css start */
+
+  .cost_course h6 {
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 700;
+    font-family: "Manrope";
+    letter-spacing: 0px;
+    color: var(--light-black-color);
+  }
+
+  .load_pdf {
+    text-align: end;
+    margin-bottom: 10px;
+  }
+
+  .load_pdf a i {
+    font-size: 15px;
+    margin-left: 10px;
+    border-bottom: 2px solid var(--white-color);
+  }
+
+  .load_pdf a {
+    padding: 10px 25px;
+    font-weight: 700;
+  }
+
+  /*  5/13/2024  css end */
+
+
+  /* .about-course */
+
+  .about-course-inof ul {
+    padding: 1rem 0 1rem 1rem !important;
+    list-style: disc;
+  }
+
+  /* .about-course */
+
+
+  /* staff-section-main */
+  .staff-section-main .staff-info p {
+    font-weight: 400;
+    color: var(--grey-color);
+    margin-top: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+
+  /* staff-section-main */
+
+
+  /* tactical-paramedic-text */
+  .tactical-paramedic-section {
+    padding: 3rem 0;
+  }
+
+  .tactical-paramedic-text ul {
+    display: flex;
+    gap: 5px;
+  }
+
+  .tactical-paramedic-text ul li i {
+    color: #ed9700;
+    font-size: 16px;
+  }
+
+  .tactical-paramedic-text h5 {
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    margin: 0;
+    padding: 15px 0;
+  }
+
+  .tactical-paramedic-text p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #757c8e;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .tactical-paramedic-text p a {
+    color: #212327;
+  }
+
+  .tactical-paramedic-ankers ul {
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+  }
+
+  .tactical-paramedic-ankers ul li a {
+    color: #757c8e;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+  }
+  .tactical-paramedic-ankers ul li a:hover{
+    color: #2e4ecc;
+    text-decoration: underline !important;
+  }
+  .tactical-paramedic-ankers ul li a i {
+    padding-right: 5px;
+  }
+
+  /* tactical-paramedic-text */
+
+  /* tactical-paramedic-section-main-2 */
+  .tactical-paramedic-section-main-2-box-1 h5 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: #212327;
+    font-weight: 700;
+  }
+
+  .tactical-paramedic-section-main-2-box-1 {
+    background-color: #f4f6f9;
+    padding: 24px 32px;
+    border-bottom: 1px solid #cdcfd5;
+  }
+
+  .tactical-paramedic-section-main-2-box-2 {
+    padding: 24px 32px 10px 32px;
+  }
+
+  .tactical-paramedic-section-main-2-box-2 li {
+    font-size: 18px;
+    padding-bottom: 15px;
+    font-family: "Open Sans", sans-serif;
+    color: #41454F;
+  }
+
+  .tactical-paramedic-section-main-2-box-2 li i {
+    font-size: 18px;
+    padding-right: 5px;
+    color: #41454F;
+  }
+
+  .tactical-paramedic-section-main-2-box .box-anker {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #3e64de;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 25px;
+    transition: 0.2s ease-in-out;
+  }
+
+  .tactical-paramedic-section-main-2-box .box-anker:hover {
+    background-color: #395bca;
+  }
+
+  .tactical-paramedic-section-main-2-box {
+    background-color: #fff;
+    border: 1px solid #cdcfd5;
+    padding: 24px 32px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-family: "Open Sans", sans-serif !important;
+  }
+
+  .tactical-paramedic-section-main-2-box.box-change {
+    background-color: #fcfcfd;
+  }
+
+  .tactical-paramedic-section-main-2-box p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    color: #212327;
+    padding: 15px 0;
+  }
+
+  .tactical-paramedic-section-main-2-box .tactical-paramedic-box {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+  }
+
+  .tactical-paramedic-section-main-2-box .tactical-paramedic-box .background {
+    font-family: "Open Sans", sans-serif;
+    font-size: 19px;
+    border-radius: 50%;
+    color: rgba(255, 255, 255, .8);
+    background-color: #3e64de;
+    padding: 0;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tactical-paramedic-section-main-2-box li a:hover {
+    text-decoration: underline !important;
+    color: #c50;
+  }
+
+  .tactical-paramedic-section-main-2-box li a {
+    color: #2452af;
+    font-size: 18px;
+    font-weight: 700;
+    transition: 0.2s ease-in-out;
+  }
+
+  /* tactical-paramedic-section-main-2 */
+
+  /* tactical-paramedic-tab */
+  .tactical-paramedic-tab .tactical-paramedic-tab-anker {
+    border-bottom: 1px solid #cdcfd5;
+  }
+
+  .tactical-paramedic-tab .tactical-paramedic-tab-anker li a {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    color: #41454f !important;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif !important;
+    border-radius: 0;
+  }
+
+  .tactical-paramedic-tab .tactical-paramedic-tab-anker li a.active {
+    background-color: transparent;
+    color: #2e4ecc !important;
+  }
+
+  .tactical-paramedic-tab .tactical-paramedic-tab-anker li a.active {
+    border-bottom: 2px solid #2e4ecc;
+  }
+
+  .tactical-paramedic-tab-text {
+    padding: 10px 0;
+  }
+
+  .tactical-paramedic-tab-text h4 {
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 19px;
+    font-weight: 700;
+    color: #212327;
+    padding: 15px 0;
+  }
+
+  .tactical-paramedic-tab-text p {
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 18px;
+    margin: 0 0 17px;
+    line-height: 29px;
+    color: #41454F;
+  }
+
+  .tactical-paramedic-tab-text h5 {
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 19px;
+    font-weight: 700;
+    color: #41454F;
+    padding-bottom: 12px;
+  }
+
+  .tactical-paramedic-tab-text ul.list-change-1 {
+    list-style: circle !important;
+  }
+
+  .tactical-paramedic-tab-text ul.list-change-2 {
+    list-style: square !important;
+  }
+
+  .tactical-paramedic-tab-text ul.list-change-1 .py {
+    padding: 10px 0 !important;
+  }
+
+  .tactical-paramedic-tab-text ul {
+    list-style: disc !important;
+    padding: 0 0 0 2rem !important;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 18px;
+    margin: 0 0 17px;
+    line-height: 29px;
+    color: #41454F;
+  }
+
+  .tactical-paramedic-tab-text h6 {
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 18px;
+    font-weight: 700;
+    color: #41454F;
+    padding-bottom: 12px;
+    font-style: italic;
+  }
+
+  .tactical-paramedic-tab-text h6.line-bottom {
+    text-decoration: underline;
+  }
+
+  .tactical-paramedic-tab-text-according-text ul {
+    padding: 0 !important;
+    text-decoration: none !important;
+    margin: 0;
+  }
+
+  .tactical-paramedic-tab-text-according-text ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    transition: 0.2s ease-in-out;
+
+  }
+
+  .tactical-paramedic-tab-text-according-text ul li span {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif !important;
+    color: #333;
+  }
+
+  .tactical-paramedic-tab-text-according-text ul li span i {
+    margin-right: 10px;
+    color: #B2B2B4;
+  }
+
+  .tactical-paramedic-tab-text-according-text ul li:hover {
+    background-color: #eff1f6;
+  }
+
+  .tactical-paramedic-tab-text-according .card-body {
+    padding: 0;
+  }
+
+  /* tactical-paramedic-tab */
+
+  /* tactical-paramedic-tab-text-according */
+  .tactical-paramedic-tab-text-according .card-btn {
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .tactical-paramedic-tab-text-according .card-btn .card-text {
+    text-align: left;
+    font-size: 20px;
+    width: 80%;
+  }
+
+  .tactical-paramedic-tab-text-according .card-btn .card-arrow {
+    width: 20%;
+    text-align: end;
+  }
+
+  .tactical-paramedic-tab-text-according .card-header {
+    padding: 0;
+  }
+
+  .tactical-paramedic-tab-text-according .card-arrow {
+    position: relative;
+    z-index: 0;
+  }
+
+  .tactical-paramedic-tab-text-according .card-arrow span i {
+    position: absolute;
+    top: -10px;
+    right: 11px;
+  }
+
+  .tactical-paramedic-tab-text-according .card-arrow span i {
+    position: absolute;
+    top: -10px;
+    right: 11px;
+  }
+
+  .tactical-paramedic-tab-text-according .arrow-up i {
+    opacity: 1;
+  }
+
+  .tactical-paramedic-tab-text-according .arrow-right i {
+    opacity: 0;
+  }
+
+  .tactical-paramedic-tab-text-according .collapsed .arrow-up i {
+    opacity: 0;
+  }
+
+  .tactical-paramedic-tab-text-according .collapsed .arrow-right i {
+    opacity: 1;
+  }
+
+  .tactical-paramedic-tab-text-according button {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif !important;
+    border: 0;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    outline: 0;
+    text-decoration: none !important;
+    padding: 18px 26px;
+    line-height: 27px;
+    color: #41454f;
+    cursor: pointer;
+  }
+
+  .tactical-paramedic-tab-text-according button:hover {
+    text-decoration: none !important;
+    border: none;
+    color: #2e4ecc;
+  }
+
+  .tactical-paramedic-tab-text-according h5 {
+    margin: 0;
+    padding: 0;
+  }
+  .tactical-paramedic-tab-text-according .card{
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 0;
+  }
+  .tactical-paramedic-tab-text-according{
+    padding-top: 20px;
+  }
+  .tactical-paramedic-tab-text h6 a{
+    color: #000;
+  }
+  .tactical-paramedic-section-main-2-box-2.style-box{
+    border-top: 1px solid #cdcfd5;
+  }
+  .tactical-paramedic-section-main-2-box-2.style-box h5{
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 19px;
+    font-weight: 700;
+    color: #41454F;
+  }
+  .tactical-paramedic-text p span{
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 16px;
+    color: #000;
+  }
+  .tactical-paramedic-text p{
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 16px;
+  }
+  .tactical-paramedic-tab-text p strong{
+    font-style: italic;
+    text-decoration: underline;
+  }
+  .tactical-paramedic-tab-text p a{
+    font-weight: 600;
+    color: #000;
+  }
+  .tactical-paramedic-tab-text p a:hover{
+    color: #c50;
+    text-decoration: underline !important;
+  }
+  .naemt-tecc-course-main{
+    display: flex;
+    align-items: center;
+  }
+  .naemt-tecc-course-img{
+    width: 20%;
+  }
+  .naemt-tecc-course-text{
+    width: 80%;
+  }
+  /* tactical-paramedic-tab-text-according */
+
+
+  /* cost_course */
+  .cost_course .nav{
+    width: 100%;
+  }
+  .cost_course ul{
+    padding: 0;
+    margin: 0;
+  }
+  .cost_course-dropdown-menu{
+    background-color: white;
+    padding: 0px 0;
+    margin: 0 !important;
+    width: 100% !important;
+    border-radius: 0;
+    padding: 5px 7px;
+  }
+  .dropdown-menu.cost_course-dropdown-menu.show a {
+    padding: 10px 0px 1px 0px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Manrope";
+    letter-spacing: 0px;
+    color: var(--light-black-color);
+    width: 100%;
+  }
+  .cost_course .cost_course-menu{  font-size: 20px;
+    font-weight: 700;
+    font-family: "Manrope";
+    letter-spacing: 0px;
+    color: var(--light-black-color);
+  }
+  .traning-info-img img {
+    width: 100%;
+    height: 310px;
+  }
+  .cost_course a {
+    padding-top: 6px !important;
+  }
+  .tactical-paramedic-tab-text ul.cc-c-main-ul{
+    list-style: none !important;
+    padding: 0 !important;
+  }
+
+  .tactical-paramedic-section-main-img img {
+      width: 100%;
+  }
+
+  .dropdown-menu.cost_course-dropdown-menu.show a:hover {
+      color: #ee7a1b !important;
+      background: transparent;
+  }

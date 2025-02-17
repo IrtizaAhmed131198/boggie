@@ -1,0 +1,664 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+:root {
+    --white-color: #ffffff;
+    --org-color: #ee7a1b;
+    --light-black-color: #010000;
+    --grey-color: #333333;
+    --org-para-color: #c56211;
+    --review-para-color: #545454;
+    --star-color: #facb64;
+    --pro-color: #f4f7f8;
+    --grid-org: linear-gradient(90deg, #e3811a, #d65c04);
+}
+
+a {
+    text-decoration: none !important;
+    font-family: "Poppins", sans-serif;
+}
+
+figure {
+    margin: 0;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+p {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.orange-btn {
+    background: var(--org-color);
+    border-radius: 40px;
+    padding: 12px 35px;
+    font-weight: 500;
+    color: var(--white-color) !important;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    transition: all ease 1s;
+    border: none;
+}
+
+.orange-btn:before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    clip-path: polygon(
+        0 0,
+        calc(100% - 40px) 0,
+        100% 50%,
+        calc(100% - 40px) 100%,
+        0 100%
+    );
+    height: 100%;
+    width: calc(100% + 40px);
+    left: calc(-100% - 40px);
+    top: 0;
+    background-color: #355e3b;
+    transition: all ease 1s;
+}
+.orange-btn:after {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    clip-path: polygon(
+        0 0,
+        calc(100% - 40px) 0,
+        100% 50%,
+        calc(100% - 40px) 100%,
+        0 100%
+    );
+    height: 100%;
+    width: calc(100% + 40px);
+    left: 100%;
+    transform: rotate(180deg);
+    top: 0;
+    background-color: #355e3b;
+    transition: all ease 1s;
+}
+
+.orange-btn:hover:before {
+    transform: translateX(100%);
+    transition: all ease 1s;
+}
+.orange-btn:hover:after {
+    transform: rotate(180deg) translateX(100%);
+    transition: all ease 1s;
+}
+
+.org-btn {
+    font-family: "Manrope", sans-serif;
+}
+
+.mobile {
+    display: none !important;
+}
+
+/* header css start */
+
+.navbar-nav {
+    gap: 18px;
+    margin-right: 30px;
+}
+
+.navbar-nav li a {
+    color: var(--light-black-color) !important;
+    font-weight: 600;
+    font-family: "Manrope", sans-serif;
+}
+.hover-dropdown {
+    position: relative;
+    z-index: 0;
+}
+
+.dropdown-menu {
+    padding: 10px;
+    z-index: 5;
+    display: none;
+    width: 180px !important;
+    margin-top: 8px !important;
+    background: var(--org-color);
+    border: none;
+}
+
+header {
+    position: relative;
+    z-index: 1;
+}
+
+ul.dropdown-menu li {
+    padding: 5px 0px;
+    height: unset !important;
+}
+ul.dropdown-menu li a {
+    color: white !important;
+}
+.navbar-nav li a i {
+    font-size: 15px;
+    margin-left: 5px;
+    transition: all ease 0.5s;
+}
+
+.hover-dropdown:hover a i {
+    transform: rotate(180deg);
+    transition: all ease 0.5s;
+}
+.cart_shop a img {
+    width: 35px;
+}
+header .d-flex {
+    align-items: center;
+    gap: 15px;
+}
+/* header css end */
+
+/* real-world css start */
+
+.real-world {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}
+
+.real-world:before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(94deg, #000000db, #0000007a);
+}
+.banner-info h1 {
+    font-size: 100px;
+    color: var(--org-color);
+    line-height: 0.9;
+    margin-bottom: 10px;
+}
+.banner-info p {
+    color: var(--white-color);
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+/* real-world css end */
+
+/* about-stragety css start */
+
+.about-stragety {
+    padding: 80px 0;
+}
+.strategy-first figure img {
+    height: 450px;
+}
+.our-stragerty {
+    padding: 80px 0px 70px 60px;
+    position: relative;
+    z-index: 0;
+    opacity: 0;
+    transition: all ease 1s;
+    /* padding: 55%; */
+}
+
+.our-stragerty:before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: var(--grey-color);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    transition: all ease 1s;
+}
+
+.our-stragerty h2 {
+    color: var(--white-color);
+    font-size: 50px;
+}
+
+.our-stragerty p {
+    color: var(--white-color);
+    font-size: 12px;
+    margin-top: 15px;
+    width: 78%;
+    font-weight: 300;
+    margin-bottom: 20px;
+    line-height: 23px;
+}
+.our-stragerty .orng_para {
+    color: var(--org-color);
+}
+
+.highlight .our-stragerty {
+    opacity: 1;
+    transition: all ease 0.5s;
+}
+
+.highlight .our-stragerty:before {
+    width: 100%;
+    transition: all ease 0.5s;
+}
+
+/* about-stragety css end */
+
+/* shop-equipment css start */
+
+.shop-equipment {
+    padding: 50px 0;
+}
+
+.shop-stragety {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.shop-stragety h2 {
+    color: #ee7a1b !important;
+    font-size: 70px;
+}
+
+.shop-stragety p {
+    margin: auto;
+    width: 65%;
+    font-weight: 400;
+    color: var(--grey-color);
+}
+.Kit-info h4 {
+    margin-top: 20px;
+    font-weight: 500;
+    color: var(--grey-color);
+    font-size: 40px;
+}
+.kit-img img {
+    /* max-width: 120px; */
+}
+.new-goal img {
+    width: 280px;
+}
+
+.new-goal p {
+    font-size: 15px !important;
+}
+.kit-img {
+    width: 80%;
+}
+
+.make-different .Kit-info h4 {
+    margin-top: 0;
+}
+.Kit-info p {
+    font-size: 12px;
+    width: 100%;
+    color: var(--grey-color);
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.loadout-Kit:hover figure img {
+    transform: scale(1.1);
+    transition: all ease 1s;
+}
+
+.Kit-img figure img {
+    transition: all ease 1s;
+}
+/* shop-equipment css end */
+
+/* traning css start */
+
+.military_weapon {
+    position: relative;
+    z-index: 0;
+    margin-bottom: 30px;
+}
+.military_weapon:before {
+    position: absolute;
+    z-index: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #0101018c;
+}
+
+.weapon-info {
+    transition: all ease 1s;
+    position: absolute;
+    z-index: 0;
+    height: 370px;
+    bottom: 30px;
+    overflow-y: scroll;
+    left: 30px;
+    right: 0;
+}
+
+.military_weapon:hover .weapon-info {
+    bottom: 50px;
+    transition: all ease 1s;
+}
+.weapon-info h3 {
+    color: var(--white-color);
+    font-size: 70px;
+    margin-bottom: 5px;
+    line-height: 1;
+}
+.weapon-info p {
+    color: var(--white-color);
+    font-weight: 400;
+    margin-bottom: 10px;
+    width: 80%;
+    font-size: 14px;
+}
+.weapon_img figure img {
+    width: 100%;
+    height: 500px;
+}
+
+/* traning css end */
+
+/* who-we-are css start */
+
+.who-we-are {
+    background-image: url(../images/who-are-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    height: 500px;
+}
+.who-we-are .shop-stragety {
+    margin-bottom: 0;
+}
+
+.who-we-are .shop-stragety h2 {
+    color: var(--org-color);
+}
+
+.who-we-are .shop-stragety p {
+    color: var(--white-color);
+    width: 50%;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+/* who-we-are css end */
+
+/* make-different css start */
+
+.make-different {
+    padding: 70px 0px 0px 0px;
+}
+.different {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 30px;
+}
+/* make-different css end */
+
+/* happy-client css start */
+
+.happy-client {
+    padding: 100px 0;
+}
+
+.client-info {
+    box-shadow: 0 0 14px 1px #0000004a;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.client-img figure img {
+    width: 130px !important;
+    height: 130px !important;
+    margin: auto;
+}
+.client-review .owl-stage-outer {
+    margin: 10px;
+}
+
+.client-img {
+    margin-top: -80px;
+}
+
+.happy-client .shop-stragety {
+    margin-bottom: 0;
+}
+.discription-review {
+    margin: 20px 0;
+}
+
+.discription-review h5 {
+    color: var(--grey-color);
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.discription-review p {
+    margin: auto;
+    color: var(--review-para-color);
+    font-weight: 300;
+    width: 95%;
+    font-size: 15px;
+    line-height: 25px;
+}
+.star-rating {
+    padding-bottom: 20px;
+}
+
+.star-rating i {
+    color: var(--star-color);
+    font-size: 18px;
+}
+.custom-review .owl-item.active.center {
+    transform: scale(1.3);
+    background: var(--white-color);
+    position: relative;
+    z-index: 20;
+}
+.owl-nav button {
+    outline: none !important;
+    background: var(--org-color) !important;
+    width: 50px;
+    height: 50px;
+    border-radius: 60% !important;
+}
+
+.owl-nav button img {
+    width: 25px !important;
+}
+.owl-nav .owl-prev {
+    rotate: 180deg;
+}
+/* happy-client css end */
+
+/* footer css start */
+
+footer {
+    padding-top: 50px;
+}
+
+.footer-links p {
+    font-size: 14px;
+    color: var(--grey-color);
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.footer-links .social-links {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.footer-links .social-links .box-same {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: #f3f3f3;
+    transition: all ease 0.5s;
+}
+
+.footer-links .social-links a img {
+    width: 22px;
+    filter: grayscale(100%);
+    opacity: 0.5;
+    transition: all ease 0.5s;
+}
+.footer-links .social-links .box-same:hover img {
+    width: 25px;
+    filter: unset;
+    opacity: 1;
+    rotate: 360deg;
+    transition: all ease 0.5s;
+    transform: scale(1.1);
+}
+.footer-links .social-links .youtube:hover {
+    background-color: #ff00004f;
+}
+.footer-links .social-links .linkedin:hover {
+    background-color: #0079b55e;
+}
+.footer-links .social-links .twitter:hover {
+    background-color: #00acf53d;
+}
+.footer-links .social-links .facebook:hover {
+    background-color: #1b6bd569;
+}
+.footer-links .social-links .instagram:hover {
+    background-color: #ca007a4d;
+}
+
+.footer-links h6 {
+    color: var(--grey-color);
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "Poppins";
+    padding-left: 1rem;
+}
+
+.footer-links ul {
+    padding-top: 20px;
+    padding-left: 1rem;
+}
+
+.footer-links ul li {
+    padding: 5px 0;
+}
+
+.footer-links ul li a {
+    color: var(--grey-color);
+    font-weight: 400;
+    font-size: 14px;
+}
+.footer-links ul li h5 {
+    font-family: "Poppins";
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--grey-color);
+}
+
+.footer-links ul li p {
+    margin-top: 5px;
+}
+.footer-links .contact-info li {
+    padding: 10px 0;
+}
+.copy-right {
+    background: var(--grid-org);
+    padding: 20px 0;
+    margin-top: 50px;
+    text-align: center;
+}
+.copy-right p {
+    color: var(--white-color);
+    font-weight: 400;
+    font-size: 16px;
+}
+/* footer css end */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--org-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--light-black-color);
+}
+
+.cart_shop a span {
+    position: absolute;
+    z-index: -1;
+    top: -10px;
+    right: -10px;
+    background: #355e3b;
+    height: 20px;
+    width: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60%;
+    font-size: 12px;
+}
+
+.cart_shop a {
+    position: relative;
+    z-index: 0;
+}
+
+.cart-heart {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cart-heart .form_save_cart button {
+    border: none;
+    background: #f4f7f8;
+}
