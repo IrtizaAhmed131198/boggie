@@ -234,12 +234,12 @@ Route::post('update/hot_list', 'Audio_gallery\Audio_galleryController@updateHotL
 Route::resource('music_news/music_news', 'Music_news\Music_newsController');
 
 
-Route::resource('staff/staff', 'Staff\StaffController');
-Route::resource('accreditations/accreditations', 'Accreditations\AccreditationsController');
+// Route::resource('staff/staff', 'Staff\StaffController');
+// Route::resource('accreditations/accreditations', 'Accreditations\AccreditationsController');
 Route::resource('subcategory/subcategory', 'Subcategory\SubcategoryController');
 
 
-Route::resource('vendors/vendors', 'Vendors\VendorsController');
+// Route::resource('vendors/vendors', 'Vendors\VendorsController');
 Route::resource('admin/chapter', 'Admin\\ChaptersController');
 Route::resource('admin/content', 'Admin\\ContentController');
 
@@ -267,16 +267,7 @@ Route::get('certificate/TR-C', 'HomeController@trc')->name('certificate.TR-C');
 Route::get('certificate/FP-C', 'HomeController@fpc')->name('certificate.FP-C');
 Route::get('certificate/TP-C', 'HomeController@tpc')->name('certificate.TP-C');
 
-
-// youtube front route
-Route::get('media', 'HomeController@youtube')->name('youtube');
-
 // youtube admin route
 Route::get('media/index', 'Admin\YoutubeController@index')->name('admin.youtube.index');
-Route::get('media/create', 'Admin\YoutubeController@create')->name('admin.youtube.create');
-Route::post('media/store', 'Admin\YoutubeController@store')->name('admin.youtube.store');
-Route::get('media/edit/{id}', 'Admin\YoutubeController@edit')->name('admin.youtube.edit');
-Route::PATCH('media/update/{id}', 'Admin\YoutubeController@update')->name('admin.youtube.update');
-Route::get('media/delete/{id}', 'Admin\YoutubeController@destroy')->name('admin.youtube.delete');
 
 Route::resource('logo/logo', 'Logo\LogoController');

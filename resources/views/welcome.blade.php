@@ -1075,8 +1075,7 @@
                                     <img src="images/pie chart 5.0.png" class="img-fluid">
                                 </div>
                             </div>
-
-                            {!! $section[7]->value !!}
+                            {!! $section[7]->value !!}              
 
                         </div>
                     </div>

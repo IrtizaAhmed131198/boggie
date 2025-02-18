@@ -190,33 +190,33 @@
                 </ul>
             </li>
 
-            <li class="nav-item {{ request()->is('staff/staff') || request()->is('staff/staff/*') ? 'active' : '' }}">
+            <!-- <li class="nav-item {{ request()->is('staff/staff') || request()->is('staff/staff/*') ? 'active' : '' }}">
                 <a href="{{ url('staff/staff') }}"><i class="fas fa-address-card"></i>
                     <span class="menu-title" data-i18n="eCommerce">Staff</span>
                 </a>
-            </li>
-            <li
+            </li> -->
+            <!-- <li
                 class="nav-item {{ request()->is('media/index') || request()->is('media/index/*') ? 'active' : '' }}">
                 <a href="{{ route('admin.youtube.index') }}"><i class="fa-brands fa-youtube"></i>
                     <span class="menu-title" data-i18n="eCommerce">Media</span>
                 </a>
-            </li>
+            </li> -->
 
-            <li
+            <!-- <li
                 class="{{ request()->is('accreditations/accreditations') || request()->is('accreditations/accreditations/*') ? 'active' : '' }}">
                 <a class="menu-item" href="{{ url('accreditations/accreditations') }}"><i
                         class="la la-shopping-cart"></i>
 
                     <span data-i18n="eCommerce">Accreditations</span>
                 </a>
-            </li>
+            </li> -->
 
-            <li class="{{ request()->is('vendors/vendors') || request()->is('vendors/vendors/*') ? 'active' : '' }}">
+            <!-- <li class="{{ request()->is('vendors/vendors') || request()->is('vendors/vendors/*') ? 'active' : '' }}">
                 <a class="menu-item" href="{{ url('vendors/vendors') }}"><i class="la la-shopping-cart"></i>
 
                     <span data-i18n="eCommerce">Vendors</span>
                 </a>
-            </li>
+            </li> -->
 
             <li class="{{ request()->is('reviews/reviews') || request()->is('reviews/reviews/*') ? 'active' : '' }}">
                 <a class="menu-item" href="{{ url('reviews/reviews') }}"><i class="la la-shopping-cart"></i>
