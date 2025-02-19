@@ -2,9 +2,8 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Support\Facades\Schema;
 
-class CreateGalleryTable extends Migration
+class CreateGalleriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +12,11 @@ class CreateGalleryTable extends Migration
      */
     public function up()
     {
-        Schema::create('gallery', function (Blueprint $table) {
-            $table->id();
-            $table->string('path');
+        Schema::create('galleries', function (Blueprint $table) {
+            $table->increments('id');
             $table->timestamps();
-        });
+            $table->string('Image')->nullable();
+            });
     }
 
     /**
@@ -27,6 +26,6 @@ class CreateGalleryTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('gallery');
+        Schema::drop('galleries');
     }
 }

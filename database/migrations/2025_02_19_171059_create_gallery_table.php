@@ -2,8 +2,9 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
-class CreateUpcomingclassesTable extends Migration
+class CreateGalleryTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,11 +13,12 @@ class CreateUpcomingclassesTable extends Migration
      */
     public function up()
     {
-        Schema::create('upcomingclasses', function (Blueprint $table) {
-            $table->increments('id');
+        Schema::create('gallery', function (Blueprint $table) {
+            $table->id();
+            $table->string('path');
+            $table->enum('status', ['pending', 'approved'])->default('pending');
             $table->timestamps();
-            $table->text('event_name')->nullable();
-            });
+        });
     }
 
     /**
@@ -26,6 +28,6 @@ class CreateUpcomingclassesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('upcomingclasses');
+        Schema::dropIfExists('gallery');
     }
 }

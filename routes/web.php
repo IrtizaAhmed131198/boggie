@@ -270,3 +270,5 @@ Route::get('media/index', 'Admin\YoutubeController@index')->name('admin.youtube.
 
 Route::resource('logo/logo', 'Logo\LogoController');
 Route::post('/gallery-images-upload', [GalleryController::class, 'gallery_images'])->name('gallery_images');
+
+Route::resource('gallery/gallery', 'Admin\galleryController');

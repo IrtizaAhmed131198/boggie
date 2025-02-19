@@ -1,38 +1,38 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Http\Request;
-use App\Inquiry;
-use App\schedule;
-use App\Newsletter;
-use App\post;
 use App\banner;
+use App\Certificate;
+use App\Content;
+use App\Http\Helpers\UserSystemInfoHelper;
+use App\Http\Traits\HelperTrait;
 use App\imagetable;
-use App\User;
+use App\Inquiry;
+use App\Models\Accreditation;
 use App\Models\Audio_gallery;
 use App\Models\Music_event;
 use App\Models\Music_news;
-use App\Models\Accreditation;
-use App\Models\Vendor;
-use DB;
-use Mail;
-use View;
-use Session;
-use App\Http\Helpers\UserSystemInfoHelper;
-use App\Http\Traits\HelperTrait;
-use Auth;
-use App\Profile;
-use App\Page;
-use App\Product;
-use App\Package;
-use App\orders;
-use App\Certificate;
-use App\Content;
 use App\Models\Review;
-use Image;
-use Illuminate\Support\Facades\Validator;
-use PDF;
+use App\Models\Vendor;
+use App\Newsletter;
+use App\orders;
+use App\Package;
+use App\Page;
+use App\post;
+use App\Product;
+use App\Profile;
+use App\schedule;
+use App\User;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Validator;
+use Image;
+use Mail;
+use PDF;
+use Session;
+use View;
 
 class HomeController extends Controller
 {
@@ -76,7 +76,7 @@ class HomeController extends Controller
         $section = DB::table('section')->where('page_id', 1)->get();
         $logo = DB::table('logos')->pluck('image');
         $address = DB::table('m_flag')->pluck('flag_value');
-        $images = DB::table('gallery')->get();
+        $images = DB::table('gallery')->where('status', 'approved')->get();
         // dd($images);
         
         return view('welcome', compact('page', 'section', 'logo', 'address' , 'images'));

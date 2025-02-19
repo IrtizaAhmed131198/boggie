@@ -26,6 +26,7 @@ class Gallery extends Model
     *
     * @var array
     */
-   protected $fillable = ['path'];
+
+    protected $fillable = ['path', 'status'];
 
 }
