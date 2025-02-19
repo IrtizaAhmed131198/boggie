@@ -363,11 +363,11 @@
                     </div>
                     <div class="copy-clip">
                         <div class="copy-links">
-                            <span>
+                            <span id="copyText">
                                 {{ $address[4] }}
                             </span>
                         </div>
-                        <button>
+                        <button onclick="copyToClipboard()">
                             <div class="copy-btn">
                                 <span>
                                     <svg data-bbox="43 29.5 114 141" viewBox="0 0 200 200" height="50" width="50"
