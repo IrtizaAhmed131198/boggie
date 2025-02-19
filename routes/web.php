@@ -212,8 +212,8 @@ route::get('status/cancelled/{id}', 'admin\\productcontroller@updatestatuscancel
 Route::resource('admin/blog', 'Admin\\BlogController');
 Route::resource('admin/category', 'Admin\\CategoryController');
 
-Route::resource('admin/banner', 'Admin\\BannerController', ['names' => 'admin.banner']);
-Route::get('admin/banner/{id}/delete', ['as' => 'banner.delete', 'uses' => 'Admin\\BannerController@destroy']);
+// Route::resource('admin/banner', 'Admin\\BannerController', ['names' => 'admin.banner']);
+// Route::get('admin/banner/{id}/delete', ['as' => 'banner.delete', 'uses' => 'Admin\\BannerController@destroy']);
 Route::resource('admin/category', 'Admin\\CategoryController');
 Route::resource('admin/attributes', 'Admin\\AttributesController');
 Route::resource('admin/attributes-value', 'Admin\\AttributesValueController');
@@ -225,10 +225,9 @@ Route::resource('admin/page', 'Admin\\PageController');
 Route::resource('about/about', 'Admin, User\\AboutController');
 // Route::resource('news/news', 'Admin\\NewsController');
 
-Route::resource('user_management/user_management', 'User_Management\UserManagementController');
-
-Route::post('update/status', 'User_Management\UserManagementController@updateStatus')->name('update.status');
-Route::post('update/featured', 'User_Management\UserManagementController@updateFeatured')->name('update.featured');
+// Route::resource('user_management/user_management', 'User_Management\UserManagementController');
+// Route::post('update/status', 'User_Management\UserManagementController@updateStatus')->name('update.status');
+// Route::post('update/featured', 'User_Management\UserManagementController@updateFeatured')->name('update.featured');
 Route::post('update/hot_list', 'Audio_gallery\Audio_galleryController@updateHotList')->name('update.hot_list');
 Route::resource('music_news/music_news', 'Music_news\Music_newsController');
 
@@ -271,4 +270,3 @@ Route::get('media/index', 'Admin\YoutubeController@index')->name('admin.youtube.
 
 Route::resource('logo/logo', 'Logo\LogoController');
 Route::post('/gallery-images-upload', [GalleryController::class, 'gallery_images'])->name('gallery_images');
-    

@@ -25,18 +25,18 @@
                             <span data-i18n="Sales">Logo Management</span>
                         </a>
                     </li>
-                    <li
+                    <!-- <li
                         class="{{ request()->routeIs('admin.banner.index') || request()->routeIs('admin.banner.create') || request()->routeIs('admin.banner.edit') ? 'active' : '' }}">
                         <a class="menu-item" href="{{ url('admin/banner') }}"><i></i>
                             <span data-i18n="Sales">Banner Management</span>
                         </a>
-                    </li>
-                    <li
+                    </li> -->
+                    <!-- <li
                         class="{{ request()->is('user_management/user_management') || request()->is('user_management/user_management*') ? 'active' : '' }}">
                         <a class="menu-item" href="{{ url('user_management/user_management') }}"><i></i>
                             <span data-i18n="eCommerce">User Management</span>
                         </a>
-                    </li>
+                    </li> -->
                     <li class="{{ request()->routeIs('admin.config.setting') ? 'active' : '' }}">
                         <a class="menu-item" href="{{ url('admin/config/setting') }}"><i></i>
                             <span data-i18n="Sales">Config</span>
