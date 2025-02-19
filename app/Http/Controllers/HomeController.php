@@ -76,9 +76,10 @@ class HomeController extends Controller
         $section = DB::table('section')->where('page_id', 1)->get();
         $logo = DB::table('logos')->pluck('image');
         $address = DB::table('m_flag')->pluck('flag_value');
-        // dd($address);
+        $images = DB::table('gallery')->get();
+        // dd($images);
         
-        return view('welcome', compact('page', 'section', 'logo', 'address'));
+        return view('welcome', compact('page', 'section', 'logo', 'address' , 'images'));
 
     }
 
@@ -152,12 +153,6 @@ class HomeController extends Controller
         return view('certificate.TP-C');
     }
 
-    public function youtube()
-    {
-        $youtube = DB::table('youtube')->get();
-        // dd($youtube);
-        return view('youtube', compact('youtube'));
-    }
 
     
     public function content()

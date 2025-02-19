@@ -611,7 +611,7 @@ a.nav-link.buy-btn {
 }
 
 .Jackson-Walk-Earth {
-    background-image: url('../images/Gecko-Michael-Jackson-Walk-Earth.jpg');
+    /* background-image: url('{!! $section[16]->value !!}');; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

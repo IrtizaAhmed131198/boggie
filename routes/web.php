@@ -1,7 +1,9 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\CourseController;
+use App\Http\Controllers\GalleryController;
+use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -223,9 +225,6 @@ Route::resource('admin/page', 'Admin\\PageController');
 Route::resource('about/about', 'Admin, User\\AboutController');
 // Route::resource('news/news', 'Admin\\NewsController');
 
-Route::resource('traning-videos', 'TraningVideosController');
-Route::resource('upcomingclasses', 'UpcomingclassesController');
-
 Route::resource('user_management/user_management', 'User_Management\UserManagementController');
 
 Route::post('update/status', 'User_Management\UserManagementController@updateStatus')->name('update.status');
@@ -271,3 +270,5 @@ Route::get('certificate/TP-C', 'HomeController@tpc')->name('certificate.TP-C');
 Route::get('media/index', 'Admin\YoutubeController@index')->name('admin.youtube.index');
 
 Route::resource('logo/logo', 'Logo\LogoController');
+Route::post('/gallery-images-upload', [GalleryController::class, 'gallery_images'])->name('gallery_images');
+    

@@ -48,7 +48,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
-                    {!! $page->content !!}
+                {!! $page->content !!}
             </div>
             <div class="col-lg-6">
                 <div class="boogie-img">
@@ -344,16 +344,16 @@
                     </div>
                     <div class="products-list">
                         <span>
-                            <img src="images/radium-white.png" class="img-fluid" alt="">
+                            <img src="{!! $section[17]->value !!}" class="img-fluid" alt="">
                         </span>
                         <span>
-                            <img src="images/solana_edited.png" class="img-fluid" alt="">
+                            <img src="{!! $section[18]->value !!}" class="img-fluid" alt="">
                         </span>
                         <span>
-                            <img src="images/jupiter-aggregatore_edited.png" class="img-fluid" alt="">
+                            <img src="{!! $section[19]->value !!}" class="img-fluid" alt="">
                         </span>
                         <span>
-                            <img src="images/ic-pinksale_61500ae2.png" class="img-fluid" alt="">
+                            <img src="{!! $section[20]->value !!}" class="img-fluid" alt="">
                         </span>
                     </div>
                     <div class="heading-copy-clip">
@@ -364,7 +364,7 @@
                     <div class="copy-clip">
                         <div class="copy-links">
                             <span>
-                            {{ $address[4] }}
+                                {{ $address[4] }}
                             </span>
                         </div>
                         <button>
@@ -674,7 +674,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
-                    {!! $section[2]->value !!}
+                        {!! $section[2]->value !!}
                     </div>
                     <div class="col-lg-6">
                         <div class="boogie-img">
@@ -696,7 +696,7 @@
 
             <div class="parent-sticky">
                 <figure class="box">
-                
+
                     <img src="{!! $section[1]->value !!}" class="img-setting" alt="">
                 </figure>
             </div>
@@ -804,7 +804,7 @@
                             <div class="col-lg-12">
                                 <div class="title">
                                     <h2 class="heading-2">
-                                    {!! $section[3]->value !!}
+                                        {!! $section[3]->value !!}
                                     </h2>
                                 </div>
                             </div>
@@ -817,12 +817,14 @@
                             <!-- Swiper -->
                             <div class="swiper mySwiper">
                                 <div class="swiper-wrapper">
+                                    @foreach($images as $image)
                                     <div class="swiper-slide">
-                                        <a data-fancybox="gallery" href="images/memes-1.jpg">
-                                            <img src="images/memes-1.jpg" class="img-fluid" />
+                                        <a data-fancybox="gallery" href="{{ asset($image->path) }}">
+                                            <img src="{{ asset($image->path) }}" class="img-fluid" />
                                         </a>
                                     </div>
-                                    <div class="swiper-slide">
+                                    @endforeach
+                                    <!-- <div class="swiper-slide">
                                         <a data-fancybox="gallery" href="images/memes-2.png">
                                             <img src="images/memes-2.png" class="img-fluid" />
                                         </a>
@@ -988,7 +990,7 @@
                                         <a data-fancybox="gallery" href="images/The Catch_0_]1737212491.jpg">
                                             <img src="images/The Catch_0_]1737212491.jpg" class="img-fluid" />
                                         </a>
-                                    </div>
+                                    </div> -->
                                 </div>
 
                             </div>
@@ -997,10 +999,17 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
+                        <form action="{{ route('gallery_images') }}" method="POST" enctype="multipart/form-data" hidden>
+                            @csrf
+                            <button type="submit" class="btn custom-btn">submit</button>
+                            <!-- file upload itself is disabled in this pen -->
+                        </form>
+
                         <div class="custom-image-bropper">
-                            <form action="" method="post">
+                            <form action="{{ route('gallery_images') }}" method="POST" enctype="multipart/form-data">
+                                @csrf
                                 <!-- The classic file input element we'll enhance to a file pond -->
-                                <input type="file" accept="image/png, image/jpeg, image/gif" class="filepond" name="filepond" multiple data-max-file-size="50MB" data-max-files="2" />
+                                <input type="file" accept="image/png, image/jpeg, image/gif" class="filepond" name="images[]" multiple data-max-file-size="50MB" data-max-files="2" />
                                 <button type="submit" class="btn custom-btn">submit</button>
                                 <!-- file upload itself is disabled in this pen -->
                             </form>
@@ -1014,7 +1023,7 @@
 
 
     <div class="section">
-        <section class="section Jackson-Walk-Earth">
+        <section class="section Jackson-Walk-Earth" style="background-image: url('{!! $section[16]->value !!}');">
             <!-- <figure>
                     <img src="images/Gecko-Michael-Jackson-Walk-Earth.jpg" class="img-fluid" alt="">
                 </figure> -->
@@ -1072,10 +1081,10 @@
                                     Tokenomics
                                 </h3>
                                 <div class="parent-ul-road-map">
-                                    <img src="images/pie chart 5.0.png" class="img-fluid">
+                                    <img src="{!! $section[15]->value !!}" class="img-fluid">
                                 </div>
                             </div>
-                            {!! $section[7]->value !!}              
+                            {!! $section[7]->value !!}
 
                         </div>
                     </div>
@@ -1095,13 +1104,13 @@
                 </div>
                 <div class="row">
                     <div class="col-4 card-content">
-                    {!! $section[9]->value !!}
+                        {!! $section[9]->value !!}
                     </div>
                     <div class="col-4 card-content">
-                    {!! $section[10]->value !!}
+                        {!! $section[10]->value !!}
                     </div>
                     <div class="col-4 card-content">
-                    {!! $section[11]->value !!}
+                        {!! $section[11]->value !!}
                     </div>
                 </div>
             </div>
@@ -1197,7 +1206,7 @@
                         </figure>
                     </div>
                     <div class="col-lg-4 col-12">
-                    {!! $section[12]->value !!}
+                        {!! $section[12]->value !!}
                     </div>
                 </div>
             </div>

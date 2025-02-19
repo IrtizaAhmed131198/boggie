@@ -5,6 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
@@ -70,6 +71,18 @@
         toastr.error("{{ Session::get('error') }}");
     </script>
     @endif
+
+    <script>
+        $(document).ready( function () {
+            // alert();
+            $('.filepond').filepond();
+
+            // $('.filepond-new').on('FilePond:addfile', function(e) {
+            //     alert(e);
+            //     console.log('file added event', e);
+            // });
+        });
+    </script>
 
 </body>
 
