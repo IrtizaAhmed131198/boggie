@@ -21,14 +21,15 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <!-- filepond cdns  -->
-    <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/filepond/dist/filepond.min.css">
     <!-- filepond cdns  -->
     <link rel="stylesheet" href="{{ asset('assets/css/custom.css')}}">
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css')}}">
 
     <title>Boogie!</title>
-
+    <!-- <style>
+        canvas { border: 1px solid #ccc; cursor: grab; }
+        #container { text-align: center; margin-top: 20px; }
+    </style> -->
     <style>
         a.filepond--credits {
             display: none !important;

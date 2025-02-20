@@ -1002,17 +1002,33 @@
                         <form action="{{ route('gallery_images') }}" method="POST" enctype="multipart/form-data" hidden>
                             @csrf
                             <button type="submit" class="btn custom-btn">submit</button>
-                            <!-- file upload itself is disabled in this pen -->
+
                         </form>
 
                         <div class="custom-image-bropper">
                             <form action="{{ route('gallery_images') }}" method="POST" enctype="multipart/form-data">
                                 @csrf
-                                <!-- The classic file input element we'll enhance to a file pond -->
-                                <input type="file" accept="image/png, image/jpeg, image/gif" class="filepond" name="images[]" multiple data-max-file-size="50MB" data-max-files="2" />
-                                <button type="submit" class="btn custom-btn">submit</button>
-                                <!-- file upload itself is disabled in this pen -->
+                                <input type="file" accept="image/png, image/jpeg, image/gif" class="filepond" id="uploadImage" name="images[]" multiple data-max-file-size="50MB" data-max-files="2" />
+                                <button type="submit" class="btn custom-btn">Submit</button>
                             </form>
+                        </div>
+
+                        <!-- Bootstrap Modal -->
+                        <div class="modal fade" id="imageEditorModal" tabindex="-1" aria-labelledby="imageEditorModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Edit Your Image</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-center">
+                                        <canvas id="imageCanvas"></canvas>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-success" onclick="downloadImage()">Download Image</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

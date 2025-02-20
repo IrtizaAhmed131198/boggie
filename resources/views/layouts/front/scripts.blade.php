@@ -14,15 +14,76 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <!-- filepond cdns -->
-<script src="https://unpkg.com/filepond-plugin-file-encode/dist/filepond-plugin-file-encode.min.js"></script>
-<script src="https://unpkg.com/filepond-plugin-file-validate-size/dist/filepond-plugin-file-validate-size.min.js"></script>
-<script src="https://unpkg.com/filepond-plugin-image-exif-orientation/dist/filepond-plugin-image-exif-orientation.min.js"></script>
-<script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.js"></script>
-<script src="https://unpkg.com/filepond/dist/filepond.min.js"></script>
 <!-- filepond cdns -->
 
 <script src="js/custom.js"></script>
+<script>
+    let canvas = document.getElementById("imageCanvas");
+    let ctx = canvas.getContext("2d");
+    let userImage = new Image();
+    let templateImage = new Image();
+    let isDragging = false, offsetX, offsetY, templateX = 50, templateY = 50;
 
+    // PNG Template Image
+    templateImage.src = "{{ asset('assets/images/Gecko-hoodie-and-glasses.png') }}";
+
+    document.getElementById("uploadImage").addEventListener("change", function(event) {
+        let file = event.target.files[0];
+        if (file) {
+            let reader = new FileReader();
+            reader.onload = function(e) {
+                userImage.onload = () => {
+                    drawCanvas();
+                    new bootstrap.Modal(document.getElementById("imageEditorModal")).show(); // Open modal
+                    document.getElementById("uploadImage").value = "edited_image.png"; // Reset input field
+                };
+                userImage.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+
+    function drawCanvas() {
+        canvas.width = userImage.width || 500;
+        canvas.height = userImage.height || 500;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(userImage, 0, 0, canvas.width, canvas.height);
+        if (templateImage.src) {
+            ctx.drawImage(templateImage, templateX, templateY, 200, 200);
+        }
+    }
+
+    canvas.addEventListener("mousedown", (e) => {
+        if (e.offsetX >= templateX && e.offsetX <= templateX + 200 &&
+            e.offsetY >= templateY && e.offsetY <= templateY + 200) {
+            isDragging = true;
+            offsetX = e.offsetX - templateX;
+            offsetY = e.offsetY - templateY;
+        }
+    });
+
+    canvas.addEventListener("mousemove", (e) => {
+        if (isDragging) {
+            templateX = e.offsetX - offsetX;
+            templateY = e.offsetY - offsetY;
+            drawCanvas();
+        }
+    });
+
+    canvas.addEventListener("mouseup", () => {
+        isDragging = false;
+    });
+
+    function downloadImage() {
+        let link = document.createElement("a");
+        link.download = "edited_image.png";
+        link.href = canvas.toDataURL();
+        link.click();
+    }
+
+    // Initialize FilePond
+    FilePond.create(document.querySelector('.filepond'));
+</script>
 <script>
     // Create a new IntersectionObserver instance
     const observer = new IntersectionObserver((entries, observer) => {
