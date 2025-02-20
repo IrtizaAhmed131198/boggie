@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\Admin\CourseController;
 use App\Http\Controllers\GalleryController;
 use Illuminate\Support\Facades\Route;
 
@@ -133,17 +132,11 @@ Route::group(['middleware' => ['auth', 'is.admin'], 'prefix' => 'admin'], functi
     Route::get('order/list', ['as' => 'order.list', 'uses' => 'Admin\\ProductController@orderList']);
     Route::get('order/detail/{id}', ['as' => 'order.list.detail', 'uses' => 'Admin\\ProductController@orderListDetail']);
 
-    Route::resource('course', 'Admin\\CourseController');
-    Route::get('course/{id}/delete', ['as' => 'course.delete', 'uses' => 'Admin\\CourseController@destroy']);
-    Route::get('course/get/index', 'Admin\CourseController@getIndex')->name('course.getIndex');
-    // Route::get('order/list', ['as' => 'order.list', 'uses' => 'Admin\\CourseController@orderList']);
-    // Route::get('order/detail/{id}', ['as' => 'order.list.detail', 'uses' => 'Admin\\CourseController@orderListDetail']);
 
     //Order Status Change Routes//
     Route::get('status/completed/{id}', 'Admin\\ProductController@updatestatuscompleted')->name('status.completed');
     Route::get('status/pending/{id}', 'Admin\\ProductController@updatestatusPending')->name('status.pending');
 
-    Route::post('course/move', 'Admin\\CourseController@move')->name('course.move');
 
 });
 
@@ -210,12 +203,11 @@ route::get('status/delivered/{id}', 'admin\\productcontroller@updatestatusdelive
 route::get('status/cancelled/{id}', 'admin\\productcontroller@updatestatuscancelled')->name('status.cancelled');
 
 Route::resource('admin/blog', 'Admin\\BlogController');
-Route::resource('admin/category', 'Admin\\CategoryController');
+// Route::resource('admin/category', 'Admin\\CategoryController');
 
 // Route::resource('admin/banner', 'Admin\\BannerController', ['names' => 'admin.banner']);
 // Route::get('admin/banner/{id}/delete', ['as' => 'banner.delete', 'uses' => 'Admin\\BannerController@destroy']);
-Route::resource('admin/category', 'Admin\\CategoryController');
-Route::resource('admin/attributes', 'Admin\\AttributesController');
+// Route::resource('admin/category', 'Admin\\CategoryController');
 Route::resource('admin/attributes-value', 'Admin\\AttributesValueController');
 Route::post('admin/get-attributes', 'Admin\\AttributesValueController@getdata')->name('get-attributes');
 Route::post('admin/pro-img-id-delet', 'Admin\\AttributesValueController@img_delete')->name('pro-img-id-delet');
@@ -234,36 +226,14 @@ Route::resource('music_news/music_news', 'Music_news\Music_newsController');
 
 // Route::resource('staff/staff', 'Staff\StaffController');
 // Route::resource('accreditations/accreditations', 'Accreditations\AccreditationsController');
-Route::resource('subcategory/subcategory', 'Subcategory\SubcategoryController');
+// Route::resource('subcategory/subcategory', 'Subcategory\SubcategoryController');
 
 
-// Route::resource('vendors/vendors', 'Vendors\VendorsController');
-Route::resource('admin/chapter', 'Admin\\ChaptersController');
-Route::resource('admin/content', 'Admin\\ContentController');
-
-Route::resource('admin/package', 'Admin\\PackageController');
-
-Route::resource('reviews/reviews', 'Reviews\ReviewsController');
 
 
-Route::post('course-status/{id}', 'Admin\CourseController@course_status')->name('course_status');
+
 Route::post('product-status/{id}', 'Admin\ProductController@product_status')->name('product_status');
 
-
-// certificate route
-Route::get('admin/certificate', 'Admin\CertificateController@index')->name('admin.certificate.index');
-Route::get('admin/certificate/create', 'Admin\CertificateController@create')->name('admin.certificate.create');
-Route::get('admin/certificate/edit/{id}', 'Admin\CertificateController@edit')->name('admin.certificate.edit.id');
-Route::post('admin/certificate/store', 'Admin\CertificateController@store')->name('admin.certificate.store');
-Route::get('admin/certificate/show', 'Admin\CertificateController@show')->name('admin.certificate.show');
-Route::post('admin/certificate/status', 'Admin\CertificateController@status')->name('admin.certificate.status');
-
-
-
-// certificate front route
-Route::get('certificate/TR-C', 'HomeController@trc')->name('certificate.TR-C');
-Route::get('certificate/FP-C', 'HomeController@fpc')->name('certificate.FP-C');
-Route::get('certificate/TP-C', 'HomeController@tpc')->name('certificate.TP-C');
 
 // youtube admin route
 Route::get('media/index', 'Admin\YoutubeController@index')->name('admin.youtube.index');

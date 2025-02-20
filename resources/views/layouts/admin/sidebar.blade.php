@@ -74,52 +74,8 @@
             </li>
 
 
-            <!-- <li class="nav-item">
-                <a href="javascript:;"><i class="la la-shopping-cart"></i><span class="menu-title" data-i18n="Dashboard">Ecommerce</span></a>
-                <ul class="menu-content">
-
-                    <li class="{{ request()->is('admin/attributes') || request()->is('admin/attributes/*') ? 'active' : '' }}">
-                        <a class="menu-item" href="{{ url('admin/attributes') }}"><i></i>
-                            <span data-i18n="eCommerce">Attributes</span>
-                        </a>
-                    </li>
-                    <li class="{{ request()->is('admin/attributes-value') || request()->is('admin/attributes-value/*') ? 'active' : '' }}">
-                        <a class="menu-item" href="{{ url('admin/attributes-value') }}"><i></i>
-                            <span data-i18n="eCommerce">Attributes Values</span>
-                        </a>
-                    </li>
-
-                    <li class="{{ request()->is('admin/category') || request()->is('admin/category/*') ? 'active' : '' }}">
-                        <a class="menu-item" href="{{ url('admin/category') }}"><i></i>
-                            <span data-i18n="eCommerce">Categories</span>
-                        </a>
-                    </li>
-                    <li class="{{ request()->is('admin/product') || request()->is('admin/product/*') ? 'active' : '' }}">
-                        <a class="menu-item" href="{{ url('admin/product') }}"><i></i>
-                            <span data-i18n="eCommerce">Products</span>
-                        </a>
-                    </li>
-                    <li class="{{ request()->is('admin/order/list') || request()->is('admin/order/list/*') ? 'active' : '' }}">
-                        <a class="menu-item" href="{{ url('admin/order/list') }}"><i></i>
-                            <span data-i18n="eCommerce">Orders</span>
-                        </a>
-                    </li>
-                </ul>
-            </li> -->
-
 
             <!-- <li class="nav-item">
-                <a href="{{ url('admin/blog') }}" target="_blank"><i class="la la-tags"></i>
-                    <span class="menu-title" data-i18n="eCommerce">Blog</span>
-                </a>
-            </li>
-            <li class="nav-item {{ request()->is('admin/testimonial') || request()->is('admin/testimonial/*') ? 'active' : '' }}">
-                <a href="{{ url('admin/testimonial') }}"><i class="la la-quote-left"></i>
-                    <span class="menu-title" data-i18n="eCommerce">Testimonials</span>
-                </a>
-            </li> -->
-
-            <li class="nav-item">
                 <a href="javascript:;"><i class="la la-shopping-cart"></i><span class="menu-title"
                         data-i18n="Dashboard">Ecommerce</span></a>
                 <ul class="menu-content">
@@ -145,85 +101,15 @@
                             <span data-i18n="eCommerce">SubCategories</span>
                         </a>
                     </li>
-                    <!-- <li
+                    <li
                         class="{{ request()->is('admin/product') || request()->is('admin/product/*') ? 'active' : '' }}">
                         <a class="menu-item" href="{{ url('admin/product') }}"><i></i>
                             <span data-i18n="eCommerce">Products</span>
                         </a>
-                    </li> -->
-                </ul>
-            </li>
-
-            <li class="nav-item">
-                <a href="javascript:;"><i class="la la-book"></i><span class="menu-title"
-                        data-i18n="Dashboard">Courses & Trainings</span></a>
-                <ul class="menu-content">
-                    <li
-                        class="{{ request()->is('admin/course') || request()->is('admin/course/*') ? 'active' : '' }}">
-                        <a class="menu-item" href="{{ url('admin/course') }}"><i></i>
-                            <span data-i18n="eCommerce">Courses</span>
-                        </a>
-                    </li>
-                    {{-- <li class="{{ (request()->is('admin/chapter') || request()->is('admin/chapter/*')) ? 'active' : '' }}">
-                        <a class="menu-item" href="{{url('admin/chapter')}}"><i></i>
-                            <span data-i18n="eCommerce">Chapters</span>
-                        </a>
-                    </li> --}}
-                    <li
-                        class="{{ request()->is('admin/content') || request()->is('admin/content/*') ? 'active' : '' }}">
-                        <a class="menu-item" href="{{ url('admin/content') }}"><i></i>
-                            <span data-i18n="eCommerce">Course Content</span>
-                        </a>
-                    </li>
-                    <li
-                        class="{{ request()->is('admin/package') || request()->is('admin/package/*') ? 'active' : '' }}">
-                        <a class="menu-item" href="{{ url('admin/package') }}"><i></i>
-                            <span data-i18n="eCommerce">Course Package</span>
-                        </a>
-                    </li>
-                    <li
-                        class="{{ request()->is('admin/certificate') || request()->is('admin/certificate/*') ? 'active' : '' }}">
-                        <a class="menu-item" href="{{ url('admin/certificate') }}"><i></i>
-                            <span data-i18n="eCommerce">Course Certificate</span>
-                        </a>
                     </li>
                 </ul>
-            </li>
-
-            <!-- <li class="nav-item {{ request()->is('staff/staff') || request()->is('staff/staff/*') ? 'active' : '' }}">
-                <a href="{{ url('staff/staff') }}"><i class="fas fa-address-card"></i>
-                    <span class="menu-title" data-i18n="eCommerce">Staff</span>
-                </a>
-            </li> -->
-            <!-- <li
-                class="nav-item {{ request()->is('media/index') || request()->is('media/index/*') ? 'active' : '' }}">
-                <a href="{{ route('admin.youtube.index') }}"><i class="fa-brands fa-youtube"></i>
-                    <span class="menu-title" data-i18n="eCommerce">Media</span>
-                </a>
             </li> -->
 
-            <!-- <li
-                class="{{ request()->is('accreditations/accreditations') || request()->is('accreditations/accreditations/*') ? 'active' : '' }}">
-                <a class="menu-item" href="{{ url('accreditations/accreditations') }}"><i
-                        class="la la-shopping-cart"></i>
-
-                    <span data-i18n="eCommerce">Accreditations</span>
-                </a>
-            </li> -->
-
-            <!-- <li class="{{ request()->is('vendors/vendors') || request()->is('vendors/vendors/*') ? 'active' : '' }}">
-                <a class="menu-item" href="{{ url('vendors/vendors') }}"><i class="la la-shopping-cart"></i>
-
-                    <span data-i18n="eCommerce">Vendors</span>
-                </a>
-            </li> -->
-
-            <li class="{{ request()->is('reviews/reviews') || request()->is('reviews/reviews/*') ? 'active' : '' }}">
-                <a class="menu-item" href="{{ url('reviews/reviews') }}"><i class="la la-shopping-cart"></i>
-
-                    <span data-i18n="eCommerce">Reviews</span>
-                </a>
-            </li>
 
             <li class="{{ request()->is('logo/logo') || request()->is('logo/logo/*') ? 'active' : '' }}">
                 <a class="menu-item" href="{{ url('logo/logo') }}"><i class="la la-shopping-cart"></i>
