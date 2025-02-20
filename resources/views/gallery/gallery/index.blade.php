@@ -19,7 +19,7 @@
     </div>
     <div class="content-header-right col-md-4 col-12">
         <div class="btn-group float-md-right">
-            <a class="btn btn-info mb-1" href="{{ url('/gallery/gallery/create') }}">Add Gallery</a>
+            <!-- <a class="btn btn-info mb-1" href="{{ url('/gallery/gallery/create') }}">Add Gallery</a> -->
         </div>
     </div>
 </div>

@@ -232,6 +232,13 @@
                 </a>
             </li>
 
+            <li class="{{ request()->is('gallery/gallery') || request()->is('gallery/gallery/*') ? 'active' : '' }}">
+                <a class="menu-item" href="{{ url('gallery/gallery') }}"><i class="la la-shopping-cart"></i>
+
+                    <span data-i18n="eCommerce">gallery</span>
+                </a>
+            </li>
+
             @php
                 $url = '/' . request()->segment(1) . '/' . request()->segment(2);
             @endphp
