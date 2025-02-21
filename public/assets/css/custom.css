@@ -1521,40 +1521,53 @@ header ul li:nth-child(7) a {
 
 /*filepond */
 
+/* Hide Default Input */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    border: 0;
+}
+
+/* File Upload Label */
 .filepond--drop-label {
-	color: #4c4e53;
+    text-align: center;
+    padding: 25px 0px 12px 10px;
+    border: 2px solid #387cf2;
+    border-radius: 16px;
+    cursor: pointer;
+    background-color: #edf0f4;
+    transition: background 0.3s ease-in-out;
+    width: 100%;
 }
 
-.filepond--label-action {
-	text-decoration-color: #babdc0;
+.filepond--drop-label:hover {
+    background-color: #d9e1ea;
 }
 
-.filepond--panel-root {
-	border-radius: 2em;
-	background-color: #edf0f4;
-	height: 1em;
-}
-
-.filepond--item-panel {
-	background-color: #595e68;
-}
-
-.filepond--drip-blob {
-	background-color: #7f8a9a;
-}
-
-.filepond--label-action {
-    color: #387cf2;
-    text-decoration-color: #387cf2;
-}
-
-.filepond--drop-label.filepond--drop-label label {
+/* Label Text */
+.filepond--drop-label label {
     color: #387cf2;
     text-transform: capitalize;
+    display: flex;
     font-weight: 400;
-    font-family: sriracha, cursive;
+    font-family: "Sriracha", cursive;
+    cursor: pointer;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    gap: 3px;
 }
 
+/* Browse Button Span */
+.filepond--label-action {
+    color: #387cf2;
+    text-decoration: underline;
+}
+
+/* Submit Button */
 .custom-image-bropper .btn.custom-btn {
     width: 100%;
     font-size: inherit;
@@ -1562,18 +1575,30 @@ header ul li:nth-child(7) a {
     font-weight: 400;
 }
 
-.filepond--file-action-button {
-    background-color: rgb(56 124 242 / 64%);
-    cursor: pointer;
+/* Image Preview Section */
+#imagePreview {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
-.filepond--file-action-button:focus, .filepond--file-action-button:hover {
-    box-shadow: none;
-    background: #ff000091;
+#imagePreview img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 /*filepond */
 
+
 .parent-sticky figure.box img {
     max-width: 600px;
 }
+
+/* canvas#imageCanvas {
+    width: 100% !important;
+    height: 100% !important;
+} */

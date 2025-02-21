@@ -3,7 +3,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script src="https://unpkg.com/fullpage.js/dist/fullpage.min.js"></script>
@@ -27,8 +28,8 @@
             reader.onload = function(e) {
                 let img = document.createElement('img');
                 img.src = e.target.result;
-                img.style.width = "100px"; // Adjust size as needed
-                img.style.height = "100px";
+                img.style.width = "230px"; // Adjust size as needed
+                img.style.height = "150px";
                 img.style.objectFit = "cover";
                 img.style.border = "1px solid #ccc";
                 previewContainer.appendChild(img);
@@ -39,72 +40,102 @@
 </script>
 <script>
     let canvas = document.getElementById("imageCanvas");
-    let ctx = canvas.getContext("2d");
-    let userImage = new Image();
-    let templateImage = new Image();
-    let isDragging = false,
-        offsetX, offsetY, templateX = 50,
-        templateY = 50;
+let ctx = canvas.getContext("2d");
+let userImage = new Image();
+let templateImage = new Image();
+let isDragging = false;
+let offsetX, offsetY, templateX = 50, templateY = 50;
+let templateWidth = 150, templateHeight = 150;
 
-    // PNG Template Image
-    templateImage.src = "{{ asset('assets/images/Gecko-hoodie-and-glasses.png') }}";
+// PNG Template Image
+templateImage.src = "{{ asset('assets/images/Gecko-hoodie-and-glasses.png') }}";
 
-    document.getElementById("uploadImage").addEventListener("change", function(event) {
-        let file = event.target.files[0];
-        if (file) {
-            let reader = new FileReader();
-            reader.onload = function(e) {
-                userImage.onload = () => {
-                    drawCanvas();
-                    new bootstrap.Modal(document.getElementById("imageEditorModal")).show(); // Open modal
-                    document.getElementById("uploadImage").value = "edited_image.png"; // Reset input field
-                };
-                userImage.src = e.target.result;
+// ✅ Fix: Canvas Size hamesha 500x500
+canvas.width = 500;
+canvas.height = 500;
+
+document.getElementById("uploadImage").addEventListener("change", function(event) {
+    let file = event.target.files[0];
+    if (file) {
+        let reader = new FileReader();
+        reader.onload = function(e) {
+            userImage.onload = () => {
+                drawCanvas(); // Image ko canvas par adjust karo
+                new bootstrap.Modal(document.getElementById("imageEditorModal")).show();
             };
-            reader.readAsDataURL(file);
-        }
-    });
-
-    function drawCanvas() {
-        canvas.width = userImage.width || 500;
-        canvas.height = userImage.height || 500;
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        ctx.drawImage(userImage, 0, 0, canvas.width, canvas.height);
-        if (templateImage.src) {
-            ctx.drawImage(templateImage, templateX, templateY, 200, 200);
-        }
+            userImage.src = e.target.result;
+        };
+        reader.readAsDataURL(file);
     }
+});
 
-    canvas.addEventListener("mousedown", (e) => {
-        if (e.offsetX >= templateX && e.offsetX <= templateX + 200 &&
-            e.offsetY >= templateY && e.offsetY <= templateY + 200) {
-            isDragging = true;
-            offsetX = e.offsetX - templateX;
-            offsetY = e.offsetY - templateY;
-        }
-    });
+function drawCanvas() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    canvas.addEventListener("mousemove", (e) => {
-        if (isDragging) {
-            templateX = e.offsetX - offsetX;
-            templateY = e.offsetY - offsetY;
-            drawCanvas();
-        }
-    });
+    // ✅ Fix: Image ko canvas ke andar fit dikhana
+    let scale = Math.min(canvas.width / userImage.width, canvas.height / userImage.height);
+    let imgWidth = userImage.width * scale;
+    let imgHeight = userImage.height * scale;
+    let imgX = (canvas.width - imgWidth) / 2;
+    let imgY = (canvas.height - imgHeight) / 2;
 
-    canvas.addEventListener("mouseup", () => {
-        isDragging = false;
-    });
+    // 🟢 **Canvas par Image ko adjust karke draw karo**
+    ctx.drawImage(userImage, imgX, imgY, imgWidth, imgHeight);
 
-    function downloadImage() {
-        let link = document.createElement("a");
-        link.download = "edited_image.png";
-        link.href = canvas.toDataURL();
-        link.click();
+    // 🟢 **PNG ko bhi draw karo**
+    ctx.drawImage(templateImage, templateX, templateY, templateWidth, templateHeight);
+}
+
+// ✅ Fix: Unlimited PNG Move Allowed
+canvas.addEventListener("mousedown", (e) => {
+    let mouseX = e.offsetX;
+    let mouseY = e.offsetY;
+
+    if (mouseX >= templateX && mouseX <= templateX + templateWidth &&
+        mouseY >= templateY && mouseY <= templateY + templateHeight) {
+        isDragging = true;
+        offsetX = mouseX - templateX;
+        offsetY = mouseY - templateY;
     }
+});
 
-    // Initialize FilePond
-    FilePond.create(document.querySelector('.filepond'));
+canvas.addEventListener("mousemove", (e) => {
+    if (isDragging) {
+        templateX = e.offsetX - offsetX;
+        templateY = e.offsetY - offsetY;
+        drawCanvas();
+    }
+});
+
+canvas.addEventListener("mouseup", () => { isDragging = false; });
+canvas.addEventListener("mouseleave", () => { isDragging = false; });
+canvas.addEventListener("mouseout", () => { isDragging = false; });
+
+function downloadImage() {
+    let link = document.createElement("a");
+    
+    // 🟢 **Original Image ko Full Resolution me Draw karna**
+    let tempCanvas = document.createElement("canvas");
+    let tempCtx = tempCanvas.getContext("2d");
+    tempCanvas.width = userImage.width;
+    tempCanvas.height = userImage.height;
+
+    // 🟢 **Original Image Draw karo**
+    tempCtx.drawImage(userImage, 0, 0, userImage.width, userImage.height);
+
+    // 🟢 **PNG bhi Original Image ke hisaab se Adjust karna**
+    let pngScale = userImage.width / canvas.width;
+    tempCtx.drawImage(templateImage, templateX * pngScale, templateY * pngScale, templateWidth * pngScale, templateHeight * pngScale);
+
+    // 🟢 **Download Final Image**
+    link.download = "edited_image.png";
+    link.href = tempCanvas.toDataURL();
+    link.click();
+}
+
+// Initialize FilePond
+FilePond.create(document.querySelector('.filepond'));
+
 </script>
 <script>
     // Create a new IntersectionObserver instance
