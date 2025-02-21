@@ -113,21 +113,17 @@ canvas.addEventListener("mouseout", () => { isDragging = false; });
 
 function downloadImage() {
     let link = document.createElement("a");
-    
-    // 🟢 **Original Image ko Full Resolution me Draw karna**
+
     let tempCanvas = document.createElement("canvas");
     let tempCtx = tempCanvas.getContext("2d");
     tempCanvas.width = userImage.width;
     tempCanvas.height = userImage.height;
 
-    // 🟢 **Original Image Draw karo**
     tempCtx.drawImage(userImage, 0, 0, userImage.width, userImage.height);
 
-    // 🟢 **PNG bhi Original Image ke hisaab se Adjust karna**
     let pngScale = userImage.width / canvas.width;
     tempCtx.drawImage(templateImage, templateX * pngScale, templateY * pngScale, templateWidth * pngScale, templateHeight * pngScale);
 
-    // 🟢 **Download Final Image**
     link.download = "edited_image.png";
     link.href = tempCanvas.toDataURL();
     link.click();
