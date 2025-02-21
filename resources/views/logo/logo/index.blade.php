@@ -55,7 +55,7 @@
                                     @foreach($logo as $item)
                                     <tr>
                                     <td>{{ $item->id }}</td>
-                                    <td>{{ $item->image }}</td>
+                                    <td><img src="{{ asset($item->image) }}" alt=""></td>
                                     <td>
 
                                         

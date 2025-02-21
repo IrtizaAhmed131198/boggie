@@ -1009,9 +1009,18 @@
                             <form action="{{ route('gallery_images') }}" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 <input type="file" accept="image/png, image/jpeg, image/gif" class="filepond" id="uploadImage" name="images[]" multiple data-max-file-size="50MB" data-max-files="2" />
+
+                                <!-- Image Preview Section (Now Below the Input) -->
+                                <div id="imagePreview" style="margin-top: 10px; display: flex; gap: 10px;"></div>
+
                                 <button type="submit" class="btn custom-btn">Submit</button>
                             </form>
                         </div>
+
+
+                        <!-- Image Preview Section -->
+                        <div id="imagePreview" style="margin-top: 10px; display: flex; gap: 10px;"></div>
+
 
                         <!-- Bootstrap Modal -->
                         <div class="modal fade" id="imageEditorModal" tabindex="-1" aria-labelledby="imageEditorModalLabel" aria-hidden="true">

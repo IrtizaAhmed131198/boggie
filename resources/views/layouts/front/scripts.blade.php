@@ -18,11 +18,33 @@
 
 <script src="js/custom.js"></script>
 <script>
+    document.getElementById('uploadImage').addEventListener('change', function(event) {
+        let previewContainer = document.getElementById('imagePreview');
+        previewContainer.innerHTML = ""; // Clear previous previews
+
+        for (let file of event.target.files) {
+            let reader = new FileReader();
+            reader.onload = function(e) {
+                let img = document.createElement('img');
+                img.src = e.target.result;
+                img.style.width = "100px"; // Adjust size as needed
+                img.style.height = "100px";
+                img.style.objectFit = "cover";
+                img.style.border = "1px solid #ccc";
+                previewContainer.appendChild(img);
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+</script>
+<script>
     let canvas = document.getElementById("imageCanvas");
     let ctx = canvas.getContext("2d");
     let userImage = new Image();
     let templateImage = new Image();
-    let isDragging = false, offsetX, offsetY, templateX = 50, templateY = 50;
+    let isDragging = false,
+        offsetX, offsetY, templateX = 50,
+        templateY = 50;
 
     // PNG Template Image
     templateImage.src = "{{ asset('assets/images/Gecko-hoodie-and-glasses.png') }}";
@@ -247,13 +269,13 @@
 </script>
 
 <script>
-function copyToClipboard() {
-    var text = document.getElementById("copyText").innerText;
-    var tempInput = document.createElement("textarea");
-    tempInput.value = text;
-    document.body.appendChild(tempInput);
-    tempInput.select();
-    document.execCommand("copy");
-    document.body.removeChild(tempInput);
-}
+    function copyToClipboard() {
+        var text = document.getElementById("copyText").innerText;
+        var tempInput = document.createElement("textarea");
+        tempInput.value = text;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand("copy");
+        document.body.removeChild(tempInput);
+    }
 </script>
