@@ -9,7 +9,7 @@
                     <div class="col-lg-12">
                         <nav class="navbar navbar-expand-lg navbar-light">
                             <a class="navbar-brand" href="#">
-                                <img src="images/boogie-logo.png" class="img-fluid" alt="">
+                                <img src="{{ asset('assets/images/boogie-logo.png') }}" class="img-fluid" alt="">
                             </a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
