@@ -1036,19 +1036,14 @@
                             <div class="custom-image-bropper">
                                 <form action="{{ route('gallery_images') }}" method="POST" enctype="multipart/form-data">
                                     @csrf
-                            
-                                    <!-- Styled File Input -->
                                     <div class="filepond--drop-label">
-                                        <label for="uploadImage">Drag & Drop your files or 
+                                        <label for="uploadImage">Drag & Drop Your Files Or 
                                             <span class="filepond--label-action" tabindex="0">Browse</span>
                                         </label>
-                                            <div id="imagePreview" style="margin-bottom: 5px"></div>                                        
+                                        <div id="imagePreview" style="margin-top: 10px"></div>                                        
                                     </div>
                                     <input type="file" accept="image/png, image/jpeg, image/gif" class="filepond visually-hidden"
-                                        id="uploadImage" name="images[]" multiple data-max-file-size="50MB" data-max-files="2" />
-                            
-                                    <!-- Image Preview Section (Now Below the Input) -->
-                            
+                                        id="uploadImage" name="images[]" multiple data-max-file-size="50MB" data-max-files="5" />
                                     <button type="submit" class="btn custom-btn my-2">Submit</button>
                                 </form>
                             </div>
