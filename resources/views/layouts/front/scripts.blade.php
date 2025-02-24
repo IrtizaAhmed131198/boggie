@@ -41,9 +41,9 @@
                 img.style.objectFit = "cover";
                 img.style.border = "1px solid #ccc";
                 img.style.borderRadius = "5px";
-                
+
                 let removeBtn = document.createElement('button');
-                removeBtn.innerHTML = "❌";
+                removeBtn.innerHTML = "✖";
                 removeBtn.style.position = "absolute";
                 removeBtn.style.top = "5px";
                 removeBtn.style.right = "5px";
