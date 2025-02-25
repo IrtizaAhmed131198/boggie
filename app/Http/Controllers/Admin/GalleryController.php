@@ -5,12 +5,12 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-use App\Models\gallery;
+use App\Models\Gallery;
 use Illuminate\Http\Request;
 use Image;
 use File;
 
-class galleryController extends Controller
+class GalleryController extends Controller
 {
 
     public function __construct()
