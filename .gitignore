@@ -20,4 +20,4 @@ yarn-error.log
 composer.lock
 .env.example
 /public/uploads
-.sql
+boogie.sql
