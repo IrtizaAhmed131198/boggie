@@ -1042,7 +1042,7 @@
                                         </label>
                                         <div id="imagePreview" style="margin-top: 10px"></div>                                        
                                     </div>
-                                    <input type="file" accept="image/png, image/jpeg, image/gif" class="filepond visually-hidden"
+                                    <input type="file" hidden accept="image/png, image/jpeg, image/gif" class="filepond visually-hidden"
                                         id="uploadImage" name="images[]" multiple data-max-file-size="50MB" data-max-files="5" />
                                     <button type="submit" class="btn custom-btn my-2">Submit</button>
                                 </form>
@@ -1078,6 +1078,41 @@
             </section>
         </div>
 
+                <!-- video section here  -->
+
+                <div class="section">
+                    <section class="dancing-section">
+                        <div class="container-fluid">
+                            <div class="row align-items-center">
+                                <div class="col-lg-4">
+                                    <div class="dancing-sec-left">
+                                        {!! $section[21]->value !!}
+                                        {!! $section[22]->value !!}
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 p-0">
+                                    <div class="dancing-sec-right">
+                                        <video id="dancingVideo" src="{{ asset('assets/images/boggie-dancing.mp4') }}" playsinline preload="auto"
+                                            muted loop tabindex="-1" autoplay></video>
+                                        <button id="playPauseBtn">
+                                            <!-- Play Icon -->
+                                            <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50"
+                                                height="50">
+                                                <path d="M8 5v14l11-7z" fill="white" />
+                                            </svg>
+                                            <!-- Pause Icon -->
+                                            <svg id="pauseIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                width="50" height="50" style="display: none;">
+                                                <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" fill="white" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- video section here  -->
 
 
         <div class="section">
@@ -1252,18 +1287,13 @@
             <section class="certik">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-lg-4 col-12">
-                            <figure>
-                                <img src="{!! $section[13]->value !!}" class="img-fluid" alt="">
-                            </figure>
-                        </div>
-                        <div class="col-lg-4 col-12">
-                            <figure>
-                                <img src="{!! $section[14]->value !!}" class="img-fluid" alt="">
-                            </figure>
-                        </div>
-                        <div class="col-lg-4 col-12">
-                            {!! $section[12]->value !!}
+                        <div class="col-lg-12 col-12">
+                            <div class="parent-last-video">
+                                <figure>
+                                    <img src="{{ asset('assets/images/boggie-video-poster.png') }}" class="img-fluid" alt="">
+                                </figure>
+                                {!! $section[12]->value !!}
+                            </div>
                         </div>
                     </div>
                 </div>

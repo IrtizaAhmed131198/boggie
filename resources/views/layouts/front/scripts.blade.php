@@ -352,3 +352,67 @@
         document.body.removeChild(tempInput);
     }
 </script>
+<script>
+    // Wait for the DOM to be fully loaded before running the script
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get references to the video, button, and icons
+        const video = document.getElementById('dancingVideo');
+        const playPauseBtn = document.getElementById('playPauseBtn');
+        const playIcon = document.getElementById('playIcon');
+        const pauseIcon = document.getElementById('pauseIcon');
+
+        // Add a click event listener to the video to toggle play/pause
+        video.addEventListener('click', function() {
+            togglePlayPause();
+        });
+
+        // Add a click event listener to the button to toggle play/pause
+        playPauseBtn.addEventListener('click', function() {
+            togglePlayPause();
+        });
+
+        // Update button icons and visibility when the video starts playing
+        video.addEventListener('play', function() {
+            playIcon.style.display = 'none'; // Hide the play icon
+            pauseIcon.style.display = 'block'; // Show the pause icon
+            hideButton(); // Hide the button after 2 seconds
+        });
+
+        // Update button icons and visibility when the video is paused
+        video.addEventListener('pause', function() {
+            pauseIcon.style.display = 'none'; // Hide the pause icon
+            playIcon.style.display = 'block'; // Show the play icon
+            // hideButton(); // Hide the button after 2 seconds
+        });
+
+        // Show the button when hovering over the video
+        video.addEventListener('mouseenter', function() {
+            playPauseBtn.classList.remove('hidden'); // Remove the 'hidden' class
+        });
+
+        // Hide the button when not hovering over the video (if the video is playing)
+        video.addEventListener('mouseleave', function() {
+            if (!video.paused) { // Check if the video is playing
+                playPauseBtn.classList.add('hidden'); // Add the 'hidden' class
+            }
+        });
+
+        // Function to toggle between play and pause
+        function togglePlayPause() {
+            if (video.paused) { // If the video is paused
+                video.play(); // Play the video
+            } else { // If the video is playing
+                video.pause(); // Pause the video
+            }
+        }
+
+        // Function to hide the button after 2 seconds
+        // function hideButton() {
+        //     setTimeout(() => { // Delay execution by 2 seconds
+        //         if (!video.paused) { // Check if the video is still playing
+        //             playPauseBtn.classList.add('hidden'); // Hide the button
+        //         }
+        //     }, 2000); // 2000 milliseconds = 2 seconds
+        // }
+    });
+    </script>

@@ -6,7 +6,7 @@ html {
     font-family: Eurostile-Oblique;
     src: url('../fonts/Eurostile-Oblique.otf');
 }
- 
+
 header {
     background: white;
     padding-top: 4rem;
@@ -392,7 +392,7 @@ body {
 }
 
 .product-list {
-    background: #f8ee00;
+    background: #9dcef8;
     padding-top: 4rem;
     padding-bottom: 2rem;
     /* height: 100vh; */
@@ -491,7 +491,7 @@ section.roadmap {
 }
 
 footer {
-    background: black;
+    background: #000000;
     padding: 4rem 0 2rem 0;
     /* height: 100vh; */
     display: flex;
@@ -522,7 +522,7 @@ ul {
 }
 
 section.gallery-item {
-    background: rgb(32, 123, 239);
+    background: #9dcef8;
     padding: 4rem 0 4rem;
     height: auto;
     display: flex;
@@ -1412,14 +1412,15 @@ figure.box {
 }
 
 section.certik {
-    background: rgb(244 236 0);
+    background: linear-gradient(180deg, rgb(32 123 239), transparent);
     padding-top: 8rem;
 }
 
 section.certik p {
     font-family: Helvetica Neue, HelveticaNeue-Light, Helvetica Neue Light, Avenir, Gordita, Helvetica, Arial, sans-serif;
-    font-size: 22px;
+    font-size: 32px;
     font-weight: 600;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -1517,57 +1518,45 @@ header ul li:nth-child(7) a {
     width: 100%;
     height: 30px;
 }
+
 /* new h css */
 
 /*filepond */
 
-/* Hide Default Input */
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    border: 0;
-}
-
-/* File Upload Label */
 .filepond--drop-label {
-    text-align: center;
-    padding: 25px 0px 12px 10px;
-    border: 2px solid #387cf2;
-    border-radius: 16px;
-    cursor: pointer;
+    color: #4c4e53;
+}
+
+.filepond--label-action {
+    text-decoration-color: #babdc0;
+}
+
+.filepond--panel-root {
+    border-radius: 2em;
     background-color: #edf0f4;
-    transition: background 0.3s ease-in-out;
-    width: 100%;
+    height: 1em;
 }
 
-.filepond--drop-label:hover {
-    background-color: #d9e1ea;
+.filepond--item-panel {
+    background-color: #595e68;
 }
 
-/* Label Text */
-.filepond--drop-label label {
-    color: #387cf2;
-    text-transform: capitalize;
-    display: flex;
-    font-weight: 400;
-    font-family: "Sriracha", cursive;
-    cursor: pointer;
-    flex-wrap: nowrap;
-    white-space: nowrap;
-    gap: 3px;
+.filepond--drip-blob {
+    background-color: #7f8a9a;
 }
 
-/* Browse Button Span */
 .filepond--label-action {
     color: #387cf2;
-    text-decoration: underline;
+    text-decoration-color: #387cf2;
 }
 
-/* Submit Button */
+.filepond--drop-label.filepond--drop-label label {
+    color: #387cf2;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-family: sriracha, cursive;
+}
+
 .custom-image-bropper .btn.custom-btn {
     width: 100%;
     font-size: inherit;
@@ -1575,20 +1564,15 @@ header ul li:nth-child(7) a {
     font-weight: 400;
 }
 
-/* Image Preview Section */
-#imagePreview {
-    margin-top: 10px;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
+.filepond--file-action-button {
+    background-color: rgb(56 124 242 / 64%);
+    cursor: pointer;
 }
 
-#imagePreview img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.filepond--file-action-button:focus,
+.filepond--file-action-button:hover {
+    box-shadow: none;
+    background: #ff000091;
 }
 
 /*filepond */
@@ -1598,45 +1582,109 @@ header ul li:nth-child(7) a {
     max-width: 600px;
 }
 
-<style>
-    .image-preview-container {
-        position: relative;
-        width: 100%;
-        max-width: 250px;
-        background: #1a1a1a;
-        border-radius: 8px;
-        padding: 10px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .image-preview-container img {
-        width: 100%;
-        height: auto;
-        border-radius: 5px;
-    }
-    .remove-image {
-        position: absolute;
-        top: 8px;
-        left: 8px;
-        background: #003366;
-        color: white;
-        border: none;
-        font-size: 14px;
-        width: 25px;
-        height: 25px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-    }
-    .file-info {
-        position: absolute;
-        bottom: 8px;
-        left: 10px;
-        color: white;
-        font-size: 12px;
-    }
-</style>
+.gallery-item .heading-2 {
+    color: black;
+}
+
+.dancing-section {
+    background-color: #e601b0;
+    padding-left: 13rem;
+}
+
+.dancing-section .heading-3 {
+    text-shadow: #ffffff -1px -1px 0px, #ffffff -1px 1px 0px, #ffffff 1px 1px 0px, #ffffff 1px -1px 0px;
+    font-family: sriracha, cursive;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.dancing-section .para {
+    width: 80%;
+    font-weight: 600;
+    font-size: 26px;
+    margin-top: 1rem;
+}
+
+.dancing-sec-right video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.dancing-sec-right {
+    width: 100%;
+    height: 854px;
+}
+
+#dancingVideo {
+    cursor: pointer;
+}
+
+#dancingVideo {
+    cursor: pointer;
+    width: 100%;
+    /* Adjust as needed */
+    height: 100%;
+    /* Adjust as needed */
+}
+
+#playPauseBtn {
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    left: 520px;
+    right: 0%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    /* Circular button */
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Initially visible */
+    opacity: 1;
+    /* Smooth transition */
+    transition: opacity 0.5s ease;
+}
+
+.dancing-sec-right {
+    position: relative;
+    /* display: inline-block; Ensure the container wraps around the video */
+}
+
+#playPauseBtn.hidden {
+    /* Hidden state */
+    opacity: 0;
+    /* Disable clicks when hidden */
+    pointer-events: none;
+}
+
+
+.parent-last-video {
+    position: relative;
+    z-index: 0;
+}
+
+.parent-last-video p.certik-right {
+    position: absolute;
+    top: 130px;
+    margin: 0;
+    height: auto;
+    right: 0;
+    font-size: 28px;
+}
+
+.parent-last-video p.certik-right {
+    margin-right: auto;
+    width: 45%;
+}
