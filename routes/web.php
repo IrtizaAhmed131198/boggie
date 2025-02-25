@@ -56,14 +56,6 @@ Route::group(['middleware' => ['auth', 'is.admin'], 'prefix' => 'admin'], functi
     Route::any('contact/submissions/delete/{id}', 'Admin\AdminController@contactSubmissionsDelete');
     Route::any('newsletter/inquiries/delete/{id}', 'Admin\AdminController@newsletterInquiriesDelete');
 
-    // #SubcriptionPlan management
-    // Route::get('subscription','Admin\SubscriptionPlanController@index')->name('admin.subscription.index');
-    // Route::get('subscription/create','Admin\SubscriptionPlanController@create')->name('admin.subscription.create');
-    // Route::post('subscription/create','Admin\SubscriptionPlanController@store')->name('admin.subscription.store');
-    // Route::get('subscription/delete/{id}','Admin\SubscriptionPlanController@delete')->name('admin.subscription.delete');
-    // Route::get('subscription/edit/{id}','Admin\SubscriptionPlanController@edit')->name('admin.subscription.edit');
-    // Route::post('subscription/edit/{id}','Admin\SubscriptionPlanController@update')->name('admin.subscription.update');
-
     /* Config Setting Form Submit Route */
     Route::post('config/setting', 'Admin\AdminController@configSettingUpdate')->name('config_settings_update');
 
@@ -121,8 +113,6 @@ Route::group(['middleware' => ['auth', 'is.admin'], 'prefix' => 'admin'], functi
     Route::get('user/edit/{id}', 'Admin\\UsersController@edit')->name('admin.user.edit');
     Route::post('users/update/{id}', 'Admin\\UsersController@update')->name('admin.user.update');
     Route::get('users/delete/{id}', 'Admin\\UsersController@destroy')->name('admin.user.delete');
-    // Route::get('user/deleted/', 'Admin\\UsersController@getDeletedUsers')->name('admin.user.');
-    // Route::get('user/restore/{id}', 'Admin\\UsersController@restoreUser')->name('admin.user.');
 
 
     Route::resource('product', 'Admin\\ProductController');
@@ -183,8 +173,6 @@ Auth::routes();
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/contact-us', 'HomeController@contact')->name('contact');
 Route::get('/about', 'HomeController@about')->name('about');
-// Route::get('/add-content', 'HomeController@content')->name('content');
-// Route::post('/upload', 'HomeController@store')->name('upload_content');
 
 
 Route::get('/set_sub_category', 'Admin\ProductController@set_sub_category')->name('set_sub_category');
@@ -203,11 +191,6 @@ route::get('status/delivered/{id}', 'admin\\productcontroller@updatestatusdelive
 route::get('status/cancelled/{id}', 'admin\\productcontroller@updatestatuscancelled')->name('status.cancelled');
 
 Route::resource('admin/blog', 'Admin\\BlogController');
-// Route::resource('admin/category', 'Admin\\CategoryController');
-
-// Route::resource('admin/banner', 'Admin\\BannerController', ['names' => 'admin.banner']);
-// Route::get('admin/banner/{id}/delete', ['as' => 'banner.delete', 'uses' => 'Admin\\BannerController@destroy']);
-// Route::resource('admin/category', 'Admin\\CategoryController');
 Route::resource('admin/attributes-value', 'Admin\\AttributesValueController');
 Route::post('admin/get-attributes', 'Admin\\AttributesValueController@getdata')->name('get-attributes');
 Route::post('admin/pro-img-id-delet', 'Admin\\AttributesValueController@img_delete')->name('pro-img-id-delet');
@@ -215,20 +198,6 @@ Route::post('admin/delete-product-variant', 'Admin\\AttributesValueController@de
 Route::resource('admin/testimonial', 'Admin\\TestimonialController');
 Route::resource('admin/page', 'Admin\\PageController');
 Route::resource('about/about', 'Admin, User\\AboutController');
-// Route::resource('news/news', 'Admin\\NewsController');
-
-// Route::resource('user_management/user_management', 'User_Management\UserManagementController');
-// Route::post('update/status', 'User_Management\UserManagementController@updateStatus')->name('update.status');
-// Route::post('update/featured', 'User_Management\UserManagementController@updateFeatured')->name('update.featured');
-Route::post('update/hot_list', 'Audio_gallery\Audio_galleryController@updateHotList')->name('update.hot_list');
-Route::resource('music_news/music_news', 'Music_news\Music_newsController');
-
-
-// Route::resource('staff/staff', 'Staff\StaffController');
-// Route::resource('accreditations/accreditations', 'Accreditations\AccreditationsController');
-// Route::resource('subcategory/subcategory', 'Subcategory\SubcategoryController');
-
-
 
 
 
@@ -241,4 +210,4 @@ Route::get('media/index', 'Admin\YoutubeController@index')->name('admin.youtube.
 Route::resource('logo/logo', 'Logo\LogoController');
 Route::post('/gallery-images-upload', [GalleryController::class, 'gallery_images'])->name('gallery_images');
 
-Route::resource('gallery/gallery', 'Admin\galleryController');
+Route::resource('gallery/gallery', 'Admin\GalleryController');
