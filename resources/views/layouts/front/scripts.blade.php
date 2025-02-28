@@ -63,7 +63,7 @@
                     dataTransfer.items.clear();
                     files.forEach(f => dataTransfer.items.add(f));
                     document.getElementById('uploadImage').files = dataTransfer
-                    .files; // Updated files set karo
+                        .files; // Updated files set karo
                 });
 
                 previewDiv.appendChild(img);
@@ -78,6 +78,23 @@
     });
 </script>
 <script>
+    let images = @json($images);
+
+    $.each(images, function(index, image) {
+        let slide = `
+        <div class="swiper-slide">
+            <a data-fancybox="gallery" href="${image.path}">
+                <img src="${image.path}" class="img-fluid" />
+            </a>
+        </div>
+    `;
+
+        $(".swiper-wrapper").append(slide);
+    });
+
+    // console.log(document.querySelector('.swiper-slide-next img'));
+</script>
+<script>
     let canvas = document.getElementById("imageCanvas");
     let ctx = canvas.getContext("2d");
     let userImage = new Image();
@@ -89,7 +106,8 @@
         templateHeight = 150;
 
     // PNG Template Image
-    templateImage.src = "{{ asset('assets/images/Gecko-hoodie-and-glasses.png') }}";
+
+    // templateImage.src = "{{ asset('assets/images/Gecko-hoodie-and-glasses.png') }}";
 
     // ✅ Fix: Canvas Size hamesha 500x500
     canvas.width = 500;
@@ -201,7 +219,7 @@
 
     // Start observing the section
     observer.observe(section);
-    </script>
+</script>
 
 <script>
     var swiper = new Swiper(".mySwiper", {
@@ -230,8 +248,34 @@
         // pagination: {
         //     el: ".swiper-pagination",
         // },
+        on: {
+            slideChange: function() {
+                setTimeout(() => {
+                    let nextSlide = document.querySelector('.swiper-slide-next');
+                    if (nextSlide) {
+                        const meme_img = nextSlide.querySelector('img');
+                        if (meme_img) {
+                            templateImage.src = meme_img.src;
+                            console.log("Updated templateImage:", templateImage.src);
+                        }
+                    }
+                }, 100);
+            }
+        }
+
     });
-    </script>
+    // ✅ Stop Swiper autoplay when clicking the label
+    document.querySelector('label[for="uploadImage"]').addEventListener('click', function() {
+        swiper.autoplay.stop(); // 🛑 Stop autoplay
+        console.log("Swiper Stopped!");
+    });
+
+    // ✅ Restart Swiper autoplay when modal is closed
+    document.getElementById("imageEditorModal").addEventListener("hidden.bs.modal", function() {
+        swiper.autoplay.start(); // ▶ Restart autoplay
+        console.log("Swiper Restarted!");
+    });
+</script>
 
 <script>
     // Play button
