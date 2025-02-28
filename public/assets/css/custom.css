@@ -492,7 +492,7 @@ section.roadmap {
 
 footer {
     background: #000000;
-    padding: 4rem 0 2rem 0;
+    padding: 4rem 15%;
     /* height: 100vh; */
     display: flex;
     align-items: center;
@@ -523,7 +523,7 @@ ul {
 
 section.gallery-item {
     background: #9dcef8;
-    padding: 4rem 0 4rem;
+    padding: 8rem 0 8rem;
     height: auto;
     display: flex;
     align-items: center;
@@ -619,14 +619,16 @@ a.nav-link.buy-btn {
 }
 
 .stage-toggie-ces {
-    background-image: url('../images/boogie.gif');
+    /* background-image: url('../images/boogie.gif'); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 100vh;
+    height: 100%;
     background-color: black;
     position: relative;
     z-index: 0;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
 }
 
 
@@ -807,8 +809,9 @@ ul.footer-first-child.footer-second-child h6 {
     height: 70px;
     width: 300px;
     position: absolute;
-    right: -280px;
-    bottom: -550px;
+    right: 9%;
+    bottom: 0;
+    top: 40%;
 }
 
 [data-mesh-id=comp-m3yhiff2inlineContent-gridContainer]>[id="comp-m3zk9l3q"] {
@@ -830,11 +833,16 @@ ul.footer-first-child.footer-second-child h6 {
     flex-direction: column;
     font: var(--font, var(--font_8));
     height: 100%;
+    max-height: 70px;
     min-height: 40px;
-    overflow: hidden;
-    position: relative;
+    /* overflow: hidden; */
+    position: absolute;
     text-align: left;
-    width: 100%;
+    width: 300px;
+    bottom: 0;
+    right: 9%;
+    top: 50%;
+    z-index: 999;
 }
 
 .MusicPlayer2802357603__mainLayoutWrapper {
@@ -855,6 +863,7 @@ ul.footer-first-child.footer-second-child h6 {
     display: block;
     height: 70px;
     width: 70px;
+    background-image: url('../images/audio-bg.png');
 }
 
 .MusicPlayer2802357603__mainLayout {
@@ -891,6 +900,8 @@ ul.footer-first-child.footer-second-child h6 {
     text-overflow: ellipsis;
     white-space: nowrap;
     width: 200px;
+    color: black;
+    margin-bottom: 5px;
 }
 
 .MusicPlayer2802357603__title+.MusicPlayer2802357603__title {
@@ -930,7 +941,7 @@ ul.footer-first-child.footer-second-child h6 {
     height: 4px;
     margin: 8px 0;
     position: relative;
-    width: 100%;
+    width: auto;
 }
 
 .ProgressBar3199726361__container:before {
@@ -967,7 +978,7 @@ ul.footer-first-child.footer-second-child h6 {
     justify-content: space-around;
     overflow: hidden;
     padding: 6px 16px;
-    width: 100%;
+    width: auto;
 }
 
 .MusicPlayer2802357603__mainLayoutWrapper {
@@ -980,15 +991,15 @@ ul.footer-first-child.footer-second-child h6 {
 }
 
 .ProgressBar3199726361__progress {
-    -webkit-appearance: none;
-    background-color: transparent;
-    border: 0;
-    border-radius: 50px;
-    color: currentColor;
+    /* -webkit-appearance: none; */
+    background-color: #ff0000;
+    /* border: 0; */
+    /* border-radius: 50px; */
+    /* color: currentColor; */
     height: 100%;
-    left: 0;
+    /* left: 0; */
     margin: 0;
-    opacity: .3;
+    opacity: 1;
     position: absolute;
     top: 0;
     width: 100%;
@@ -1005,21 +1016,22 @@ progress {
 
 .ProgressBar3199726361__range {
     -webkit-appearance: none;
-    background: transparent;
+    background: #f80000;
     border: 0;
     border-radius: 50px;
     box-sizing: content-box;
-    color: currentColor;
+    color: black;
     cursor: pointer;
     display: block;
-    height: 100%;
+    height: 10px;
     left: 0;
     margin: 0;
     padding: 8px 0;
     position: absolute;
-    top: -8px;
+    top: -11px;
     transition: color .3s ease;
     width: 100%;
+    /* display: none; */
 }
 
 .MusicPlayer2802357603__root.MusicPlayer2802357603--hasProgressBar .MusicPlayer2802357603__timeStamp {
@@ -1042,6 +1054,8 @@ progress {
     opacity: .6;
     padding: 4px 0 4px 12px;
     white-space: nowrap;
+    color: #646464;
+    opacity: 1;
 }
 
 button:focus {
@@ -1159,6 +1173,8 @@ button:focus {
     width: 100%;
     border-radius: 6px;
     border: 2px solid #ffffff;
+    width: 100%;
+    max-height: 300px;
 }
 
 .swiper-3d {
@@ -1413,7 +1429,8 @@ figure.box {
 
 section.certik {
     background: linear-gradient(180deg, rgb(32 123 239), transparent);
-    padding-top: 8rem;
+    padding-top: 0rem;
+    padding-bottom: 2rem;
 }
 
 section.certik p {
@@ -1577,13 +1594,13 @@ header ul li:nth-child(7) a {
 
 /*filepond */
 
-
 .parent-sticky figure.box img {
     max-width: 600px;
 }
 
 .gallery-item .heading-2 {
     color: black;
+    margin-bottom: 4rem;
 }
 
 .dancing-section {
@@ -1618,7 +1635,7 @@ header ul li:nth-child(7) a {
 }
 
 .dancing-sec-right {
-    width: 100%;
+    width: 1401px;
     height: 854px;
 }
 
@@ -1673,18 +1690,265 @@ header ul li:nth-child(7) a {
 .parent-last-video {
     position: relative;
     z-index: 0;
+    top: 70px;
 }
 
 .parent-last-video p.certik-right {
-    position: absolute;
+    /* position: absolute; */
     top: 130px;
     margin: 0;
     height: auto;
     right: 0;
-    font-size: 28px;
+    font-size: 26px;
 }
 
 .parent-last-video p.certik-right {
     margin-right: auto;
-    width: 45%;
+    width: 100%;
+}
+
+div#target-section {
+    text-align: center;
+}
+
+div#target-section .stage-boggie img {
+    max-width: 500px;
+    margin: auto;
+    object-fit: contain;
+}
+
+span.shadow-light {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+.custom-image-bropper {
+    position: relative;
+    z-index: 0;
+    background: rgb(31, 121, 239);
+    width: 100%;
+    border-radius: 12px;
+    padding: 40px 30px;
+    text-align: center;
+    width: 570px;
+    margin: auto;
+}
+
+
+/* audio css  */
+/* Progress Bar */
+.ProgressBar3199726361__progress {
+    /* width: auto; */
+    height: 4px;
+    /* background-color: #e0e0e0; */
+}
+
+/* Range Input (Seek Bar) */
+.ProgressBar3199726361__range {
+    width: 100%;
+    height: 4px;
+    background-color: #007bff;
+    appearance: none;
+    outline: none;
+}
+
+.ProgressBar3199726361__range::-webkit-slider-thumb {
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background-color: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Play/Pause Button */
+.PlayPause170508545__button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* audio css  */
+
+
+
+#play-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#play-btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* Progress Bar */
+.ProgressBar3199726361__progress {
+    /* width: 100%; */
+    height: 100%;
+    /* background-color: #e0e0e0; */
+}
+
+/* Range Input (Seek Bar) */
+.ProgressBar3199726361__range {
+    width: auto;
+    height: 4px;
+    background-color: #007bff;
+    appearance: none;
+    outline: none;
+    opacity: 0;
+}
+
+.ProgressBar3199726361__range::-webkit-slider-thumb {
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background-color: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+/* animation css  */
+
+
+
+.stage-toggie-ces {
+    overflow: hidden;
+}
+
+
+
+span.direction-hand img {
+    width: 156px;
+    height: 65px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+span.direction-hand {
+    position: absolute;
+    left: -70px;
+    bottom: -30px;
+}
+
+/* Light Animation */
+.stage-toggie-ces .shadow-light {
+    opacity: 0;
+    transition: opacity 1s ease-in 0s;
+    /* No delay for initial state */
+}
+
+.stage-toggie-ces.animate .shadow-light {
+    opacity: 1;
+    transition: opacity 1s ease-in 0s;
+    /* Light appears immediately */
+}
+
+/* Audio Player Animation */
+.stage-toggie-ces .MusicPlayer2802357603__root {
+    opacity: 0;
+    transform: translate(-900px, 0px);
+    transition: opacity 1s ease-in 1.5s, transform 1s ease-in 1.5s;
+    /* Delay of 1.5s */
+}
+
+.stage-toggie-ces.animate .MusicPlayer2802357603__root {
+    opacity: 1;
+    transform: translate(0px, 0px);
+    transition: opacity 1s ease-in 1.5s, transform 1s ease-in 1.5s;
+    /* Delay of 1.5s */
+}
+
+/* Dance Animation */
+.stage-toggie-ces .stage-boggie {
+    opacity: 0;
+    transform: translate(0px, 100px);
+    transition: opacity 1s ease-in 3s, transform 1s ease-in 3s;
+    /* Delay of 3s */
+}
+
+.stage-toggie-ces.animate .stage-boggie {
+    opacity: 1;
+    transform: translate(0px, 0px);
+    transition: opacity 1s ease-in 3s, transform 1s ease-in 3s;
+    /* Delay of 3s */
+}
+
+/* animation css  */
+
+
+.boggie-big-images {
+    /* background-image: url('../images/Gecko-Michael-Jackson-Walk-Earth.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    height: 100%;
+}
+
+.parent-big-image img {
+    width: 100%;
+    margin-bottom: -7rem;
+    object-fit: contain;
+}
+
+.parent-big-image {
+    background-color: rgb(32 123 239);
+}
+
+.custom-image-bropper input.filepond {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    cursor: pointer;
+    color: white;
+    opacity: 0;
+}
+
+.custom-image-bropper h6 {
+    color: white !important;
+    margin: 0 0 0;
+    margin-bottom: 10px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.custom-image-bropper p {
+    color: white;
+    margin: 0 0 0;
+    font-size: 22px;
+}
+
+.custom-image-bropper button {
+    background: transparent;
+    border: none;
+    color: #FEF100;
+    text-decoration: underline;
+    font-size: 18px;
+    margin-top: 1rem;
+}
+
+ul.footer-first-child {
+    padding: 0;
+}
+.meme-generator{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 710;
 }

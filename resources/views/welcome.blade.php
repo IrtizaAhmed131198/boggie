@@ -439,69 +439,80 @@
 
         <div class="section __web-inspector-hide-shortcut__" id="target-section">
             <section class="stage-toggie-ces" id="targetSection">
+                <span class="shadow-light">
+                    <img src="{{ asset('assets/images/NO-shadow-2.png') }}" alt="">
+                </span>
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="stage-boggie" id="target-section">
-                                <!-- <figure>
-                                            <img src="images/PNG_New Travolta Image and light_no Lamp_PSD 500_NO TAIL NO TAIl_PNG.png"-->
-                                <!--        class="img-fluid" alt="">-->
-                                <!--</figure> -->
-                                <!--<div id="comp-m3zk9l3q"-->
-                                <!--    class="MusicPlayer2802357603__root MusicPlayer2802357603--hasProgressBar MusicPlayer2802357603--isClassicLayout comp-m3zk9l3q wixui-audio-player"-->
-                                <!--    data-hook="player" data-motion-enter="done">-->
-                                <!--    <div class="MusicPlayer2802357603__mainLayoutWrapper">-->
-                                <!--        <div class="MusicPlayer2802357603__coverLayout" data-hook="coverLayout">-->
-                                <!--            <div class="Cover2206545806__cover MusicPlayer2802357603__cover"-->
-                                <!--                data-hook="cover"></div>-->
-                                <!--        </div>-->
-                                <!--        <div class="MusicPlayer2802357603__mainLayout">-->
-                                <!--            <div class="MusicPlayer2802357603__upperLayout">-->
-                                <!--                <div class="MusicPlayer2802357603__titleLayout" data-hook="titleLayout">-->
-                                <!--                    <span-->
-                                <!--                        class="TrackName3057130458__title MusicPlayer2802357603__title"-->
-                                <!--                        data-hook="trackName">17 - The Trammps - Disco-->
-                                <!--                        Inferno</span><span-->
-                                <!--                        class="ArtistName2701513331__title MusicPlayer2802357603__title"-->
-                                <!--                        data-hook="artistName"></span>-->
-                                <!--                </div>-->
-                                <!--            </div>-->
-                                <!--            <div class="MusicPlayer2802357603__lowerLayout">-->
-                                <!--                <div class="MusicPlayer2802357603__playLayout" data-hook="playLayout">-->
-                                <!--                    <button-->
-                                <!--                        class="PlayPause170508545__button MusicPlayer2802357603__playButton"-->
-                                <!--                        data-hook="play" aria-label="Play" aria-pressed="false"-->
-                                <!--                        type="button"><svg width="18px" height="20px"-->
-                                <!--                            viewBox="0 0 18 20" xmlns="http://www.w3.org/2000/svg">-->
-                                <!--                            <g fill="currentcolor">-->
-                                <!--                                <path-->
-                                <!--                                    d="M17.29,9.02 C18.25,9.56 18.25,10.44 17.29,10.98 L1.74,19.78 C0.78,20.33 0,19.87 0,18.76 L0,1.24 C0,0.13 0.78,-0.32 1.74,0.22 L17.29,9.02 Z">-->
-                                <!--                                </path>-->
-                                <!--                            </g>-->
-                                <!--                        </svg></button>-->
-                                <!--                </div>-->
-                                <!--                <div class="MusicPlayer2802357603__progressLayout"-->
-                                <!--                    data-hook="progressLayout">-->
-                                <!--                    <div class="ProgressBar3199726361__container"-->
-                                <!--                        data-hook="progressBar" role="progressbar"><progress-->
-                                <!--                            class="ProgressBar3199726361__progress" max="100"-->
-                                <!--                            value="42.90485940717864"></progress><input type="range"-->
-                                <!--                            class="ProgressBar3199726361__range MusicPlayer2802357603__progressRangeBar"-->
-                                <!--                            min="0" max="653.061224" step="0.01" aria-valuemin="0"-->
-                                <!--                            aria-valuemax="100" aria-valuenow="23" aria-valuetext="23%"-->
-                                <!--                            style="--value: 23.281714395586285%;" value="152.043849">-->
-                                <!--                    </div>-->
-                                <!--                </div><span-->
-                                <!--                    class="TimeStamp49918727__time MusicPlayer2802357603__timeStamp"-->
-                                <!--                    data-hook="timeStamp">02:32 / 10:53</span>-->
-                                <!--            </div>-->
-                                <!--        </div>-->
-                                <!--    </div>-->
-                                <!--</div>-->
+                                <figure>
+                                    <img src="{{ asset('assets/images/Boogiedancing-HD_0_]1740587257.gif') }}"
+                                        class="img-fluid" alt="">
+                                </figure>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Audio Player -->
+                <!-- External Play Button -->
+
+                <!-- Audio Player -->
+                <!-- External Play Button -->
+                <!-- <button id="play-btn">Play Audio</button> -->
+
+                <!-- Audio Player -->
+                <div id="audio-player" class="MusicPlayer2802357603__root">
+                    <span class="direction-hand">
+                        <img src="{{ asset('assets/images/b8489a_0f22a9fb3770451a9dc754923a1b602c~mv2.gif') }}"
+                            alt="">
+                    </span>
+                    <div class="MusicPlayer2802357603__mainLayoutWrapper">
+                        <div class="MusicPlayer2802357603__coverLayout">
+                            <div class="Cover2206545806__cover"></div>
+                        </div>
+                        <div class="MusicPlayer2802357603__mainLayout">
+                            <div class="MusicPlayer2802357603__upperLayout">
+                                <div class="MusicPlayer2802357603__titleLayout">
+                                    <span class="TrackName3057130458__title">17 - The Trammps - Disco Inferno</span>
+                                    <span class="ArtistName2701513331__title"></span>
+                                </div>
+                            </div>
+                            <div class="MusicPlayer2802357603__lowerLayout">
+                                <!-- Play/Pause Button -->
+                                <div class="MusicPlayer2802357603__playLayout">
+                                    <button id="play-pause-button" class="PlayPause170508545__button" aria-label="Play"
+                                        type="button">
+                                        <svg width="18px" height="20px" viewBox="0 0 18 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g fill="currentcolor">
+                                                <path
+                                                    d="M17.29,9.02 C18.25,9.56 18.25,10.44 17.29,10.98 L1.74,19.78 C0.78,20.33 0,19.87 0,18.76 L0,1.24 C0,0.13 0.78,-0.32 1.74,0.22 L17.29,9.02 Z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <!-- Progress Bar -->
+                                <div class="MusicPlayer2802357603__progressLayout">
+                                    <div class="ProgressBar3199726361__container">
+                                        <progress id="progress-bar" class="ProgressBar3199726361__progress"
+                                            max="100" value="0"></progress>
+                                        <input id="seek-bar" type="range" class="ProgressBar3199726361__range"
+                                            min="0" max="100" step="0.01" value="0">
+                                    </div>
+                                </div>
+                                <!-- Timestamp -->
+                                <span id="timestamp" class="TimeStamp49918727__time">00:00 / 00:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Audio Element -->
+                <audio id="audio" src="{{ asset('assets/images/the-trammps-disco-inferno-croped.mp3') }}"></audio>
+
             </section>
         </div>
 
@@ -832,8 +843,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row align-items-center justify-content-between">
-                        <div class="col-lg-8">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-lg-12">
                             <div class="gallery-item-slider">
                                 <!-- Swiper -->
                                 <div class="swiper mySwiper">
@@ -846,172 +857,172 @@
                                             </div>
                                         @endforeach
                                         <!-- <div class="swiper-slide">
-                                                <a data-fancybox="gallery" href="images/memes-2.png">
-                                                    <img src="images/memes-2.png" class="img-fluid" />
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a data-fancybox="gallery" href="images/memes-3.png">
-                                                    <img src="images/memes-3.png" class="img-fluid" />
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a data-fancybox="gallery" href="images/memes-4.png">
-                                                    <img src="images/memes-4.png" class="img-fluid" />
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a data-fancybox="gallery" href="images/memes-5.png">
-                                                    <img src="images/memes-5.png" class="img-fluid" />
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a data-fancybox="gallery" href="images/memes-6.png">
-                                                    <img src="images/memes-6.png" class="img-fluid" />
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a data-fancybox="gallery" href="images/memes-7.jpg">
-                                                    <img src="images/memes-7.jpg" class="img-fluid" />
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a data-fancybox="gallery" href="images/memes-8.png">
-                                                    <img src="images/memes-8.png" class="img-fluid" />
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a data-fancybox="gallery" href="images/memes-9.png">
-                                                    <img src="images/memes-9.png" class="img-fluid" />
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a data-fancybox="gallery" href="images/memes-10.png">
-                                                    <img src="images/memes-10.png" class="img-fluid" />
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a data-fancybox="gallery" href="images/memes-11.png">
-                                                    <img src="images/memes-11.png" class="img-fluid" />
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a data-fancybox="gallery" href="images/memes-12.png">
-                                                    <img src="images/memes-12.png" class="img-fluid" />
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a data-fancybox="gallery" href="images/memes-13.png">
-                                                    <img src="images/memes-13.png" class="img-fluid" />
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a data-fancybox="gallery" href="images/memes-14.png">
-                                                    <img src="images/memes-14.png" class="img-fluid" />
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a data-fancybox="gallery" href="images/memes-15.png">
-                                                    <img src="images/memes-15.png" class="img-fluid" />
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a data-fancybox="gallery" href="images/memes-16.png">
-                                                    <img src="images/memes-16.png" class="img-fluid" />
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a data-fancybox="gallery" href="images/memes-17.png">
-                                                    <img src="images/memes-17.png" class="img-fluid" />
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a data-fancybox="gallery" href="images/memes-18.png">
-                                                    <img src="images/memes-18.png" class="img-fluid" />
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a data-fancybox="gallery" href="images/memes-19.png">
-                                                    <img src="images/memes-19.png" class="img-fluid" />
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a data-fancybox="gallery" href="images/memes-20.png">
-                                                    <img src="images/memes-20.png" class="img-fluid" />
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a data-fancybox="gallery"
-                                                    href="images/Boogie as Austin Powers with caption_0_]1737211088.png">
-                                                    <img src="images/Boogie as Austin Powers with caption_0_]1737211088.png"
-                                                        class="img-fluid" />
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a data-fancybox="gallery"
-                                                    href="images/Boogie Harley Final_0_]1737175027.png">
-                                                    <img src="images/Boogie Harley Final_0_]1737175027.png"
-                                                        class="img-fluid" />
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a data-fancybox="gallery"
-                                                    href="images/Boogie Takes world by storm_final_0_]1737215564.png">
-                                                    <img src="images/Boogie Takes world by storm_final_0_]1737215564.png"
-                                                        class="img-fluid" />
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a data-fancybox="gallery" href="images/Breaking News_0_]1737175077.png">
-                                                    <img src="images/Breaking News_0_]1737175077.png" class="img-fluid" />
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a data-fancybox="gallery" href="images/Bull Riding 4_0_]1737174625.png">
-                                                    <img src="images/Bull Riding 4_0_]1737174625.png" class="img-fluid" />
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a data-fancybox="gallery"
-                                                    href="images/Cigar and Hot Lady_0_]1737174562.png">
-                                                    <img src="images/Cigar and Hot Lady_0_]1737174562.png"
-                                                        class="img-fluid" />
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a data-fancybox="gallery" href="images/Money cropped_0_]1737175373.png">
-                                                    <img src="images/Money cropped_0_]1737175373.png" class="img-fluid" />
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a data-fancybox="gallery" href="images/party_0_]1737212180.png">
-                                                    <img src="images/party_0_]1737212180.png" class="img-fluid" />
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a data-fancybox="gallery" href="images/PNG.Boogie King_0_]1737564027.png">
-                                                    <img src="images/PNG.Boogie King_0_]1737564027.png" class="img-fluid" />
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a data-fancybox="gallery"
-                                                    href="images/PNG_Green Portrait Werewolf Night_0_]1737212398.png">
-                                                    <img src="images/PNG_Green Portrait Werewolf Night_0_]1737212398.png"
-                                                        class="img-fluid" />
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a data-fancybox="gallery"
-                                                    href="images/PNG_Missing Person_0_]1737222225.png">
-                                                    <img src="images/PNG_Missing Person_0_]1737222225.png"
-                                                        class="img-fluid" />
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a data-fancybox="gallery" href="images/The Catch_0_]1737212491.jpg">
-                                                    <img src="images/The Catch_0_]1737212491.jpg" class="img-fluid" />
-                                                </a>
-                                            </div> -->
+                                                        <a data-fancybox="gallery" href="images/memes-2.png">
+                                                            <img src="images/memes-2.png" class="img-fluid" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a data-fancybox="gallery" href="images/memes-3.png">
+                                                            <img src="images/memes-3.png" class="img-fluid" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a data-fancybox="gallery" href="images/memes-4.png">
+                                                            <img src="images/memes-4.png" class="img-fluid" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a data-fancybox="gallery" href="images/memes-5.png">
+                                                            <img src="images/memes-5.png" class="img-fluid" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a data-fancybox="gallery" href="images/memes-6.png">
+                                                            <img src="images/memes-6.png" class="img-fluid" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a data-fancybox="gallery" href="images/memes-7.jpg">
+                                                            <img src="images/memes-7.jpg" class="img-fluid" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a data-fancybox="gallery" href="images/memes-8.png">
+                                                            <img src="images/memes-8.png" class="img-fluid" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a data-fancybox="gallery" href="images/memes-9.png">
+                                                            <img src="images/memes-9.png" class="img-fluid" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a data-fancybox="gallery" href="images/memes-10.png">
+                                                            <img src="images/memes-10.png" class="img-fluid" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a data-fancybox="gallery" href="images/memes-11.png">
+                                                            <img src="images/memes-11.png" class="img-fluid" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a data-fancybox="gallery" href="images/memes-12.png">
+                                                            <img src="images/memes-12.png" class="img-fluid" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a data-fancybox="gallery" href="images/memes-13.png">
+                                                            <img src="images/memes-13.png" class="img-fluid" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a data-fancybox="gallery" href="images/memes-14.png">
+                                                            <img src="images/memes-14.png" class="img-fluid" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a data-fancybox="gallery" href="images/memes-15.png">
+                                                            <img src="images/memes-15.png" class="img-fluid" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a data-fancybox="gallery" href="images/memes-16.png">
+                                                            <img src="images/memes-16.png" class="img-fluid" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a data-fancybox="gallery" href="images/memes-17.png">
+                                                            <img src="images/memes-17.png" class="img-fluid" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a data-fancybox="gallery" href="images/memes-18.png">
+                                                            <img src="images/memes-18.png" class="img-fluid" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a data-fancybox="gallery" href="images/memes-19.png">
+                                                            <img src="images/memes-19.png" class="img-fluid" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a data-fancybox="gallery" href="images/memes-20.png">
+                                                            <img src="images/memes-20.png" class="img-fluid" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a data-fancybox="gallery"
+                                                            href="images/Boogie as Austin Powers with caption_0_]1737211088.png">
+                                                            <img src="images/Boogie as Austin Powers with caption_0_]1737211088.png"
+                                                                class="img-fluid" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a data-fancybox="gallery"
+                                                            href="images/Boogie Harley Final_0_]1737175027.png">
+                                                            <img src="images/Boogie Harley Final_0_]1737175027.png"
+                                                                class="img-fluid" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a data-fancybox="gallery"
+                                                            href="images/Boogie Takes world by storm_final_0_]1737215564.png">
+                                                            <img src="images/Boogie Takes world by storm_final_0_]1737215564.png"
+                                                                class="img-fluid" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a data-fancybox="gallery" href="images/Breaking News_0_]1737175077.png">
+                                                            <img src="images/Breaking News_0_]1737175077.png" class="img-fluid" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a data-fancybox="gallery" href="images/Bull Riding 4_0_]1737174625.png">
+                                                            <img src="images/Bull Riding 4_0_]1737174625.png" class="img-fluid" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a data-fancybox="gallery"
+                                                            href="images/Cigar and Hot Lady_0_]1737174562.png">
+                                                            <img src="images/Cigar and Hot Lady_0_]1737174562.png"
+                                                                class="img-fluid" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a data-fancybox="gallery" href="images/Money cropped_0_]1737175373.png">
+                                                            <img src="images/Money cropped_0_]1737175373.png" class="img-fluid" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a data-fancybox="gallery" href="images/party_0_]1737212180.png">
+                                                            <img src="images/party_0_]1737212180.png" class="img-fluid" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a data-fancybox="gallery" href="images/PNG.Boogie King_0_]1737564027.png">
+                                                            <img src="images/PNG.Boogie King_0_]1737564027.png" class="img-fluid" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a data-fancybox="gallery"
+                                                            href="images/PNG_Green Portrait Werewolf Night_0_]1737212398.png">
+                                                            <img src="images/PNG_Green Portrait Werewolf Night_0_]1737212398.png"
+                                                                class="img-fluid" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a data-fancybox="gallery"
+                                                            href="images/PNG_Missing Person_0_]1737222225.png">
+                                                            <img src="images/PNG_Missing Person_0_]1737222225.png"
+                                                                class="img-fluid" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a data-fancybox="gallery" href="images/The Catch_0_]1737212491.jpg">
+                                                            <img src="images/The Catch_0_]1737212491.jpg" class="img-fluid" />
+                                                        </a>
+                                                    </div> -->
                                     </div>
 
                                 </div>
@@ -1019,7 +1030,7 @@
                                 <div class="swiper-button-prev arrow"></div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-12">
                             <form action="{{ route('gallery_images') }}" method="POST" enctype="multipart/form-data"
                                 hidden>
                                 @csrf
@@ -1033,7 +1044,7 @@
                                         tabindex="0">Browse</span></label>
                             </div> --}}
 
-                            <div class="custom-image-bropper">
+                            {{-- <div class="custom-image-bropper">
                                 <form action="{{ route('gallery_images') }}" method="POST" enctype="multipart/form-data">
                                     @csrf
                                     <div class="filepond--drop-label">
@@ -1046,6 +1057,27 @@
                                         id="uploadImage" name="images[]" multiple data-max-file-size="50MB" data-max-files="5" />
                                     <button type="submit" class="btn custom-btn my-2">Submit</button>
                                 </form>
+                            </div> --}}
+
+                            <div class="col-lg-12">
+                                <div class="custom-image-bropper" style="cursor: pointer">
+                                    <form action="{{ route('gallery_images') }}" method="POST"
+                                        enctype="multipart/form-data">
+                                        @csrf
+                                        <div class="meme-generator">
+                                            <label for="uploadImage">"Put the Glasses On" Meme
+                                                <span class="filepond--label-action" style="color: #fff" tabindex="0">
+                                                    Generator</span>
+                                            </label>
+                                            <div id="imagePreview" style="margin-top: 10px"></div>
+                                        </div>
+                                        <p>Take a photo op with Boogie!</p>
+                                        <input type="file" hidden accept="image/png, image/jpeg, image/gif"
+                                            class="filepond visually-hidden" id="uploadImage" name="images[]" multiple
+                                            data-max-file-size="50MB" data-max-files="5" />
+                                        <button type="submit" class="">Click here</button>
+                                    </form>
+                                </div>
                             </div>
 
                             <!-- Image Preview Section -->
@@ -1078,50 +1110,44 @@
             </section>
         </div>
 
-                <!-- video section here  -->
-
-                <div class="section">
-                    <section class="dancing-section">
-                        <div class="container-fluid">
-                            <div class="row align-items-center">
-                                <div class="col-lg-4">
-                                    <div class="dancing-sec-left">
-                                        {!! $section[21]->value !!}
-                                        {!! $section[22]->value !!}
-                                    </div>
-                                </div>
-                                <div class="col-lg-8 p-0">
-                                    <div class="dancing-sec-right">
-                                        <video id="dancingVideo" src="{{ asset('assets/images/boggie-dancing.mp4') }}" playsinline preload="auto"
-                                            muted loop tabindex="-1" autoplay></video>
-                                        <button id="playPauseBtn">
-                                            <!-- Play Icon -->
-                                            <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50"
-                                                height="50">
-                                                <path d="M8 5v14l11-7z" fill="white" />
-                                            </svg>
-                                            <!-- Pause Icon -->
-                                            <svg id="pauseIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                                width="50" height="50" style="display: none;">
-                                                <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" fill="white" />
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <!-- video section here  -->
-
+        <!-- video section here  -->
 
         <div class="section">
-            <section class="section Jackson-Walk-Earth" style="background-image: url('{!! $section[16]->value !!}');">
-                <!-- <figure>
-                            <img src="images/Gecko-Michael-Jackson-Walk-Earth.jpg" class="img-fluid" alt="">
-                        </figure> -->
+            <section class="dancing-section">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4">
+                            <div class="dancing-sec-left">
+                                {!! $section[21]->value !!}
+                                {!! $section[22]->value !!}
+                            </div>
+                        </div>
+                        <div class="col-lg-8 p-0">
+                            <div class="dancing-sec-right">
+                                <video id="dancingVideo" src="{{ asset('assets/images/boggie-dancing.mp4') }}"
+                                    playsinline preload="auto" muted loop tabindex="-1" autoplay></video>
+                                <button id="playPauseBtn">
+                                    <!-- Play Icon -->
+                                    <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                        width="50" height="50">
+                                        <path d="M8 5v14l11-7z" fill="white" />
+                                    </svg>
+                                    <!-- Pause Icon -->
+                                    <svg id="pauseIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                        width="50" height="50" style="display: none;">
+                                        <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" fill="white" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
+        <!-- video section here  -->
+
+
+
 
 
 
@@ -1188,12 +1214,21 @@
         </div>
 
 
+        <div class="section">
+            <section class="boggie-big-images">
+
+                <div class="parent-big-image">
+                    <img src="{!! $section[16]->value !!}" alt="">
+                </div>
+
+            </section>
+        </div>
 
         <div class="section">
             <section class="ecosystem">
                 <div class="container-fluid">
                     <div class="content">
-                        <h1 class="heading-2">{!! $section[8]->value !!}</h1>
+                        <h1 class="heading-2"> {!! $section[8]->value !!}</h1>
                     </div>
                     <div class="row">
                         <div class="col-4 card-content">
@@ -1209,6 +1244,7 @@
                 </div>
             </section>
         </div>
+
 
         <div class="section">
             <section class="logos-new">
@@ -1283,16 +1319,39 @@
             </section>
         </div>
 
-        <div class="section">
+        {{-- <div class="section">
             <section class="certik">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-12 col-12">
                             <div class="parent-last-video">
                                 <figure>
-                                    <img src="{{ asset('assets/images/boggie-video-poster.png') }}" class="img-fluid" alt="">
+                                    <img src="{{ asset('assets/images/boggie-video-poster.png') }}" class="img-fluid"
+                                        alt="">
                                 </figure>
                                 {!! $section[12]->value !!}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div> --}}
+
+
+        <div class="section">
+            <section class="certik">
+                <div class="container">
+                    <div class="row align-items-start justify-content-center">
+                        <div class="col-lg-4 col-12">
+                            <figure>
+                                <img src="{!! $section[14]->value !!}" class="img-fluid" alt="">
+                            </figure>
+                        </div>
+                        <div class="col-xxl-6 col-xl-5 col-lg-4 col-md-5 col-12">
+                            <div class="parent-last-video">
+                                <p class="certik-right">
+                                    {{ $section[12]->value }}
+                                </p>
                             </div>
                         </div>
                     </div>

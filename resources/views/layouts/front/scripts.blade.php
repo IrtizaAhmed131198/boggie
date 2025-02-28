@@ -13,6 +13,7 @@
 
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/custom.js"></script>
 
 <!-- filepond cdns -->
 <!-- filepond cdns -->
@@ -179,6 +180,7 @@
     // Initialize FilePond
     FilePond.create(document.querySelector('.filepond'));
 </script>
+
 <script>
     // Create a new IntersectionObserver instance
     const observer = new IntersectionObserver((entries, observer) => {
@@ -199,7 +201,7 @@
 
     // Start observing the section
     observer.observe(section);
-</script>
+    </script>
 
 <script>
     var swiper = new Swiper(".mySwiper", {
@@ -229,7 +231,7 @@
         //     el: ".swiper-pagination",
         // },
     });
-</script>
+    </script>
 
 <script>
     // Play button
@@ -415,4 +417,27 @@
         //     }, 2000); // 2000 milliseconds = 2 seconds
         // }
     });
-    </script>
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const sections = document.querySelectorAll('.stage-toggie-ces');
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.5,
+            }
+        );
+
+        sections.forEach((section) => {
+            observer.observe(section);
+        });
+    });
+</script>
