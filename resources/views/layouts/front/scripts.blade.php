@@ -77,7 +77,7 @@
         document.getElementById('uploadImage').files = dataTransfer.files; // Updated files set karo
     });
 </script>
-<script>
+{{-- <script>
     let images = @json($images);
 
     $.each(images, function(index, image) {
@@ -93,7 +93,7 @@
     });
 
     // console.log(document.querySelector('.swiper-slide-next img'));
-</script>
+</script> --}}
 <script>
     let canvas = document.getElementById("imageCanvas");
     let ctx = canvas.getContext("2d");
