@@ -11,17 +11,17 @@
                 <div class="social-links">
                     <span>
                         <a href="javascript:;">
-                            <img src="images/twitter.avif" class="img-fluid" alt="">
+                            <img src="{{ asset("assets/images/twitter.avif") }}" class="img-fluid" alt="">
                         </a>
                     </span>
                     <span>
                         <a href="javascript:;">
-                            <img src="images/telegram_edited_edited.png" class="img-fluid" alt="">
+                            <img src="{{ asset("assets/images/telegram_edited_edited.png") }}" class="img-fluid" alt="">
                         </a>
                     </span>
                     <span>
                         <a href="javascript:;">
-                            <img src="images/Tiktok.png" class="img-fluid" alt="">
+                            <img src="{{ asset("assets/images/Tiktok.png") }}" class="img-fluid" alt="">
                         </a>
                     </span>
                 </div>
