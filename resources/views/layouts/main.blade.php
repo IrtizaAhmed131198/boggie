@@ -70,17 +70,7 @@
     </script>
     @endif
 
-    <script>
-        $(document).ready( function () {
-            // alert();
-            $('.filepond').filepond();
 
-            // $('.filepond-new').on('FilePond:addfile', function(e) {
-            //     alert(e);
-            //     console.log('file added event', e);
-            // });
-        });
-    </script>
 
 </body>
 

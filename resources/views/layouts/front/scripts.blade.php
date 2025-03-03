@@ -13,12 +13,9 @@
 
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="js/custom.js"></script>
+<script src="{{ asset('assets/js/custom.js') }}"></script>
 
-<!-- filepond cdns -->
-<!-- filepond cdns -->
 
-<script src="js/custom.js"></script>
 <script>
     document.getElementById('uploadImage').addEventListener('change', function(event) {
         let previewContainer = document.getElementById('imagePreview');
@@ -195,8 +192,6 @@
         link.click();
     }
 
-    // Initialize FilePond
-    FilePond.create(document.querySelector('.filepond'));
 </script>
 
 <script>
@@ -275,24 +270,6 @@
         swiper.autoplay.start(); // ▶ Restart autoplay
         console.log("Swiper Restarted!");
     });
-</script>
-
-<script>
-    // Play button
-    const play_btn = document.querySelector('#play-btn');
-
-    // Audio file
-    let sound = new Audio("images/boogie-song.mp3");
-
-    // Enable loop
-    sound.loop = true;
-
-    // Play event
-    play_btn.addEventListener('click', play);
-
-    function play() {
-        sound.play();
-    }
 </script>
 
 <script>

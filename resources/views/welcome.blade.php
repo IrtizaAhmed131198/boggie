@@ -524,7 +524,7 @@
 
                         <div class="child-marquee item">
                             <figure>
-                                <img src="images/who-img-1.png" class="img-fluid" alt="">
+                                <img src="{{ asset('assets/images/who-img-1.png') }}" class="img-fluid" alt="">
                             </figure>
                             <button class="btn hover-btn">
                                 <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
@@ -536,7 +536,7 @@
                         </div>
                         <div class="child-marquee item">
                             <figure>
-                                <img src="images/who-img-2.png" class="img-fluid" alt="">
+                                <img src="{{ asset('assets/images/who-img-2.png') }}" class="img-fluid" alt="">
                             </figure>
                             <button class="btn hover-btn">
                                 <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
@@ -548,7 +548,7 @@
                         </div>
                         <div class="child-marquee item">
                             <figure>
-                                <img src="images/who-img-3.png" class="img-fluid" alt="">
+                                <img src="{{ asset('assets/images/who-img-3.png') }}" class="img-fluid" alt="">
                             </figure>
                             <button class="btn hover-btn">
                                 <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
@@ -560,7 +560,7 @@
                         </div>
                         <div class="child-marquee item">
                             <figure>
-                                <img src="images/who-img-4.png" class="img-fluid" alt="">
+                                <img src="{{ asset('assets/images/who-img-4.png') }}" class="img-fluid" alt="">
                             </figure>
                             <button class="btn hover-btn">
                                 <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
@@ -572,7 +572,7 @@
                         </div>
                         <div class="child-marquee item">
                             <figure>
-                                <img src="images/who-img-5.png" class="img-fluid" alt="">
+                                <img src="{{ asset('assets/images/who-img-5.png') }}" class="img-fluid" alt="">
                             </figure>
                             <button class="btn hover-btn">
                                 <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
@@ -584,7 +584,7 @@
                         </div>
                         <div class="child-marquee item">
                             <figure>
-                                <img src="images/who-img-6.png" class="img-fluid" alt="">
+                                <img src="{{ asset('assets/images/who-img-6.png') }}" class="img-fluid" alt="">
                             </figure>
                             <button class="btn hover-btn">
                                 <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
@@ -596,7 +596,7 @@
                         </div>
                         <div class="child-marquee item">
                             <figure>
-                                <img src="images/who-img-7.png" class="img-fluid" alt="">
+                                <img src="{{ asset('assets/images/who-img-7.png') }}" class="img-fluid" alt="">
                             </figure>
                             <button class="btn hover-btn">
                                 <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
@@ -608,7 +608,7 @@
                         </div>
                         <div class="child-marquee item">
                             <figure>
-                                <img src="images/who-img-1.png" class="img-fluid" alt="">
+                                <img src="{{ asset('assets/images/who-img-1.png') }}" class="img-fluid" alt="">
                             </figure>
                             <button class="btn hover-btn">
                                 <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
@@ -620,7 +620,7 @@
                         </div>
                         <div class="child-marquee item">
                             <figure>
-                                <img src="images/who-img-2.png" class="img-fluid" alt="">
+                                <img src="{{ asset('assets/images/who-img-2.png') }}" class="img-fluid" alt="">
                             </figure>
                             <button class="btn hover-btn">
                                 <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
@@ -632,7 +632,7 @@
                         </div>
                         <div class="child-marquee item">
                             <figure>
-                                <img src="images/who-img-3.png" class="img-fluid" alt="">
+                                <img src="{{ asset('assets/images/who-img-3.png') }}" class="img-fluid" alt="">
                             </figure>
                             <button class="btn hover-btn">
                                 <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
@@ -644,7 +644,7 @@
                         </div>
                         <div class="child-marquee item">
                             <figure>
-                                <img src="images/who-img-4.png" class="img-fluid" alt="">
+                                <img src="{{ asset('assets/images/who-img-4.png') }}" class="img-fluid" alt="">
                             </figure>
                             <button class="btn hover-btn">
                                 <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
@@ -656,7 +656,7 @@
                         </div>
                         <div class="child-marquee item">
                             <figure>
-                                <img src="images/who-img-5.png" class="img-fluid" alt="">
+                                <img src="{{ asset('assets/images/who-img-5.png') }}" class="img-fluid" alt="">
                             </figure>
                             <button class="btn hover-btn">
                                 <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
@@ -668,7 +668,7 @@
                         </div>
                         <div class="child-marquee item">
                             <figure>
-                                <img src="images/who-img-6.png" class="img-fluid" alt="">
+                                <img src="{{ asset('assets/images/who-img-6.png') }}" class="img-fluid" alt="">
                             </figure>
                             <button class="btn hover-btn">
                                 <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
@@ -680,7 +680,7 @@
                         </div>
                         <div class="child-marquee item">
                             <figure>
-                                <img src="images/who-img-7.png" class="img-fluid" alt="">
+                                <img src="{{ asset('assets/images/who-img-7.png') }}" class="img-fluid" alt="">
                             </figure>
                             <button class="btn hover-btn">
                                 <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
@@ -856,174 +856,174 @@
                                                 </a>
                                             </div>
                                         @endforeach
-                                        
+
                                         <!-- <div class="swiper-slide">
-                                                        <a data-fancybox="gallery" href="images/memes-2.png">
-                                                            <img src="images/memes-2.png" class="img-fluid" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a data-fancybox="gallery" href="images/memes-3.png">
-                                                            <img src="images/memes-3.png" class="img-fluid" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a data-fancybox="gallery" href="images/memes-4.png">
-                                                            <img src="images/memes-4.png" class="img-fluid" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a data-fancybox="gallery" href="images/memes-5.png">
-                                                            <img src="images/memes-5.png" class="img-fluid" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a data-fancybox="gallery" href="images/memes-6.png">
-                                                            <img src="images/memes-6.png" class="img-fluid" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a data-fancybox="gallery" href="images/memes-7.jpg">
-                                                            <img src="images/memes-7.jpg" class="img-fluid" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a data-fancybox="gallery" href="images/memes-8.png">
-                                                            <img src="images/memes-8.png" class="img-fluid" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a data-fancybox="gallery" href="images/memes-9.png">
-                                                            <img src="images/memes-9.png" class="img-fluid" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a data-fancybox="gallery" href="images/memes-10.png">
-                                                            <img src="images/memes-10.png" class="img-fluid" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a data-fancybox="gallery" href="images/memes-11.png">
-                                                            <img src="images/memes-11.png" class="img-fluid" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a data-fancybox="gallery" href="images/memes-12.png">
-                                                            <img src="images/memes-12.png" class="img-fluid" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a data-fancybox="gallery" href="images/memes-13.png">
-                                                            <img src="images/memes-13.png" class="img-fluid" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a data-fancybox="gallery" href="images/memes-14.png">
-                                                            <img src="images/memes-14.png" class="img-fluid" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a data-fancybox="gallery" href="images/memes-15.png">
-                                                            <img src="images/memes-15.png" class="img-fluid" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a data-fancybox="gallery" href="images/memes-16.png">
-                                                            <img src="images/memes-16.png" class="img-fluid" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a data-fancybox="gallery" href="images/memes-17.png">
-                                                            <img src="images/memes-17.png" class="img-fluid" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a data-fancybox="gallery" href="images/memes-18.png">
-                                                            <img src="images/memes-18.png" class="img-fluid" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a data-fancybox="gallery" href="images/memes-19.png">
-                                                            <img src="images/memes-19.png" class="img-fluid" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a data-fancybox="gallery" href="images/memes-20.png">
-                                                            <img src="images/memes-20.png" class="img-fluid" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a data-fancybox="gallery"
-                                                            href="images/Boogie as Austin Powers with caption_0_]1737211088.png">
-                                                            <img src="images/Boogie as Austin Powers with caption_0_]1737211088.png"
-                                                                class="img-fluid" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a data-fancybox="gallery"
-                                                            href="images/Boogie Harley Final_0_]1737175027.png">
-                                                            <img src="images/Boogie Harley Final_0_]1737175027.png"
-                                                                class="img-fluid" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a data-fancybox="gallery"
-                                                            href="images/Boogie Takes world by storm_final_0_]1737215564.png">
-                                                            <img src="images/Boogie Takes world by storm_final_0_]1737215564.png"
-                                                                class="img-fluid" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a data-fancybox="gallery" href="images/Breaking News_0_]1737175077.png">
-                                                            <img src="images/Breaking News_0_]1737175077.png" class="img-fluid" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a data-fancybox="gallery" href="images/Bull Riding 4_0_]1737174625.png">
-                                                            <img src="images/Bull Riding 4_0_]1737174625.png" class="img-fluid" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a data-fancybox="gallery"
-                                                            href="images/Cigar and Hot Lady_0_]1737174562.png">
-                                                            <img src="images/Cigar and Hot Lady_0_]1737174562.png"
-                                                                class="img-fluid" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a data-fancybox="gallery" href="images/Money cropped_0_]1737175373.png">
-                                                            <img src="images/Money cropped_0_]1737175373.png" class="img-fluid" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a data-fancybox="gallery" href="images/party_0_]1737212180.png">
-                                                            <img src="images/party_0_]1737212180.png" class="img-fluid" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a data-fancybox="gallery" href="images/PNG.Boogie King_0_]1737564027.png">
-                                                            <img src="images/PNG.Boogie King_0_]1737564027.png" class="img-fluid" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a data-fancybox="gallery"
-                                                            href="images/PNG_Green Portrait Werewolf Night_0_]1737212398.png">
-                                                            <img src="images/PNG_Green Portrait Werewolf Night_0_]1737212398.png"
-                                                                class="img-fluid" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a data-fancybox="gallery"
-                                                            href="images/PNG_Missing Person_0_]1737222225.png">
-                                                            <img src="images/PNG_Missing Person_0_]1737222225.png"
-                                                                class="img-fluid" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a data-fancybox="gallery" href="images/The Catch_0_]1737212491.jpg">
-                                                            <img src="images/The Catch_0_]1737212491.jpg" class="img-fluid" />
-                                                        </a>
-                                                    </div> -->
+                                                            <a data-fancybox="gallery" href="images/memes-2.png">
+                                                                <img src="images/memes-2.png" class="img-fluid" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a data-fancybox="gallery" href="images/memes-3.png">
+                                                                <img src="images/memes-3.png" class="img-fluid" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a data-fancybox="gallery" href="images/memes-4.png">
+                                                                <img src="images/memes-4.png" class="img-fluid" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a data-fancybox="gallery" href="images/memes-5.png">
+                                                                <img src="images/memes-5.png" class="img-fluid" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a data-fancybox="gallery" href="images/memes-6.png">
+                                                                <img src="images/memes-6.png" class="img-fluid" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a data-fancybox="gallery" href="images/memes-7.jpg">
+                                                                <img src="images/memes-7.jpg" class="img-fluid" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a data-fancybox="gallery" href="images/memes-8.png">
+                                                                <img src="images/memes-8.png" class="img-fluid" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a data-fancybox="gallery" href="images/memes-9.png">
+                                                                <img src="images/memes-9.png" class="img-fluid" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a data-fancybox="gallery" href="images/memes-10.png">
+                                                                <img src="images/memes-10.png" class="img-fluid" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a data-fancybox="gallery" href="images/memes-11.png">
+                                                                <img src="images/memes-11.png" class="img-fluid" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a data-fancybox="gallery" href="images/memes-12.png">
+                                                                <img src="images/memes-12.png" class="img-fluid" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a data-fancybox="gallery" href="images/memes-13.png">
+                                                                <img src="images/memes-13.png" class="img-fluid" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a data-fancybox="gallery" href="images/memes-14.png">
+                                                                <img src="images/memes-14.png" class="img-fluid" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a data-fancybox="gallery" href="images/memes-15.png">
+                                                                <img src="images/memes-15.png" class="img-fluid" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a data-fancybox="gallery" href="images/memes-16.png">
+                                                                <img src="images/memes-16.png" class="img-fluid" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a data-fancybox="gallery" href="images/memes-17.png">
+                                                                <img src="images/memes-17.png" class="img-fluid" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a data-fancybox="gallery" href="images/memes-18.png">
+                                                                <img src="images/memes-18.png" class="img-fluid" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a data-fancybox="gallery" href="images/memes-19.png">
+                                                                <img src="images/memes-19.png" class="img-fluid" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a data-fancybox="gallery" href="images/memes-20.png">
+                                                                <img src="images/memes-20.png" class="img-fluid" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a data-fancybox="gallery"
+                                                                href="images/Boogie as Austin Powers with caption_0_]1737211088.png">
+                                                                <img src="images/Boogie as Austin Powers with caption_0_]1737211088.png"
+                                                                    class="img-fluid" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a data-fancybox="gallery"
+                                                                href="images/Boogie Harley Final_0_]1737175027.png">
+                                                                <img src="images/Boogie Harley Final_0_]1737175027.png"
+                                                                    class="img-fluid" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a data-fancybox="gallery"
+                                                                href="images/Boogie Takes world by storm_final_0_]1737215564.png">
+                                                                <img src="images/Boogie Takes world by storm_final_0_]1737215564.png"
+                                                                    class="img-fluid" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a data-fancybox="gallery" href="images/Breaking News_0_]1737175077.png">
+                                                                <img src="images/Breaking News_0_]1737175077.png" class="img-fluid" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a data-fancybox="gallery" href="images/Bull Riding 4_0_]1737174625.png">
+                                                                <img src="images/Bull Riding 4_0_]1737174625.png" class="img-fluid" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a data-fancybox="gallery"
+                                                                href="images/Cigar and Hot Lady_0_]1737174562.png">
+                                                                <img src="images/Cigar and Hot Lady_0_]1737174562.png"
+                                                                    class="img-fluid" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a data-fancybox="gallery" href="images/Money cropped_0_]1737175373.png">
+                                                                <img src="images/Money cropped_0_]1737175373.png" class="img-fluid" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a data-fancybox="gallery" href="images/party_0_]1737212180.png">
+                                                                <img src="images/party_0_]1737212180.png" class="img-fluid" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a data-fancybox="gallery" href="images/PNG.Boogie King_0_]1737564027.png">
+                                                                <img src="images/PNG.Boogie King_0_]1737564027.png" class="img-fluid" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a data-fancybox="gallery"
+                                                                href="images/PNG_Green Portrait Werewolf Night_0_]1737212398.png">
+                                                                <img src="images/PNG_Green Portrait Werewolf Night_0_]1737212398.png"
+                                                                    class="img-fluid" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a data-fancybox="gallery"
+                                                                href="images/PNG_Missing Person_0_]1737222225.png">
+                                                                <img src="images/PNG_Missing Person_0_]1737222225.png"
+                                                                    class="img-fluid" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a data-fancybox="gallery" href="images/The Catch_0_]1737212491.jpg">
+                                                                <img src="images/The Catch_0_]1737212491.jpg" class="img-fluid" />
+                                                            </a>
+                                                        </div> -->
                                     </div>
 
                                 </div>
